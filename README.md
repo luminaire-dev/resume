@@ -42,17 +42,17 @@ Agile/SCRUM/Kanban, Trunk Based Development, Continuous Integration (CI), Contin
 
 ##### ATB Flexible Pension Plan, 2015 - 2016
 * Developed an internal .NET app to allow ATB team members to update or make changes to their pension
-* Tech Used: C#, ASP.NET, SQL Server, SOAP, SVN, NUnit.
+* Tech Used: C#, ASP.NET, SQL Server, SOAP, SVN, NUnit
 
 ##### ATB Customer Service Application (CSA), 2013 - 2015
-* Development and operational support of an internal desktop app used by our customer service teams in ATB branches.
-* Tech Used: Java (Swing), Object Oriented Programming (OOP), Eclipse, DB2, Axis2, SOAP, J2EE, SVN, CVS, Apache Ant.
+* Development and operational support of an internal desktop app used by our customer service teams in ATB branches
+* Tech Used: Java (Swing), Object Oriented Programming (OOP), Eclipse, DB2, Axis2, SOAP, J2EE, SVN, CVS, Apache Ant
 
 ## Education 👩🏻‍🎓
 ### Northern Alberta Institute of Technology (NAIT)
 #### Digital Media and IT Diploma
 ##### Capstone Project:
-Remodled and rebuilt an Access 97 database in SQL using relational databse practices like Private/Foreign keys and stored proceedures. Our Client was Alberta Health Services.
+Remodled and rebuilt an Access 97 database in SQL using Private/Foreign keys and stored proceedures. Our Client was Alberta Health Services.
 ## Other
 ### ATB Engineering Culture Excellence Award Winner, 2021
 Awarded to ATB team members who have gone above and beyond to exemplify ATB’s Engineering Culture.
@@ -63,4 +63,4 @@ Volunteered as a Mentor at this beginner-friendly hackathon.
 ### Apple Worldwide Developers Conference (WDDC), 2017
 Attended sessions on Apple Pay, Swift, Accessibility, Core ML, and AR.
 ### Google Cloud Relay, 2018
-In this 6 hours codingelay event, I wrote a Google Cloud hosted React app that provides a localized ski condition forecast.
+In this 6 hours coding relay challenge, I wrote a Google Cloud hosted React app that provides a localized ski condition forecast.
