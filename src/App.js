@@ -109,7 +109,7 @@ function App() {
 
             <Heading>Hi there, I'm Leila. 👋</Heading>
             <p>I create simple, elegant solutions for complex problems. I started my coding journey at age 10 when I discovered
-            I could modify the source code to my neopets page. Fast forward to today: I’m building customer facing web and mobile
+            I could modify the source code to my neopets page. Fast forward to today: I’m building customer-facing web and mobile
              banking solutions at ATB Financial. As the Lead Developer on the Business Banking Mobile project, I’m continuously
              striving to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally
              curious, I love working on teams, and I’m one of those people who puts ketchup on their poutine. 🤭</p>
