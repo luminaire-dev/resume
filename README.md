@@ -38,11 +38,11 @@ Agile/SCRUM/Kanban, Trunk Based Development, Continuous Integration (CI), Contin
 * Development of ATB's retail banking mobile and web platform using HTML5 and Cordova
 * Developed remote cheque deposit, e-transfer, bill payment, and account summary modules
 * Configured CI/CD pipelines in Jenkins
-* Tech sed: HTML5, CSS, Bootstrap, SVN, Jenkins, SAP Mobile Platform, SOAP
+* Tech Used: HTML5, CSS, Bootstrap, SVN, Jenkins, SAP Mobile Platform, SOAP
 
 ##### ATB Flexible Pension Plan, 2015 - 2016
 * Developed an internal .NET app to allow ATB team members to update or make changes to their pension
-* Tech sed: C#, ASP.NET, SQL Server, SOAP, SVN, NUnit.
+* Tech Used: C#, ASP.NET, SQL Server, SOAP, SVN, NUnit.
 
 ##### ATB Customer Service Application (CSA), 2013 - 2015
 * Development and operational support of an internal desktop app used by our customer service teams in ATB branches.
