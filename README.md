@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Leila Elkhalidy  
+###### Full Stack Developer • Edmonton, AB • leila.elkhalidy@gmail.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi there, I'm Leila. 👋
 
-## Available Scripts
+I love creating simple, elegant solutions for complex problems, I have over eight years of relevant development experience and I’m one of those people who puts ketchup on their poutine. 🤭 If you're willing to look past my peculiar food preferences - let me tell you more. I'm currently working at ATB Financial as a full stack developer, building mobile and web banking solutions. I'm the lead developer on the Business Banking Mobile project where I’m continuously improving our code, testing and delivery practices, to better serve our customers. I'm naturally curious, love working on a team and I don't take myself too seriously.
 
-In the project directory, you can run:
+## Tech Stack 📚
+JavaScript/ES6, React, Redux, Bable, Webpack, Node.js, Express, Cordova, JSON, XML, CSS, SOAP, REST, Json Web Tokens (JWT), Python, Pytes, Jest, Experitest (Mobile test automation), MongoDB, Java, Git, GitLab, Bitrise, Jenkins, Bitbucket, auth0
 
-### `npm start`
+## Development Practices 👩🏻‍💻
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Agile/SCRUM/Kanban, Trunk Based Development, Continuous Integration (CI), Continuous Deployment (CD), Feature Toggling, Microservice Architecture, Unit Testing, Test Automation, Paired Programming, Code Reviews, Test Driven Development
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Experience 👔
+### Senior Software Developer, ATB Financial
+###### May 2013 - Present, Edmonton AB
 
-### `npm test`
+##### Business Banking Mobile  - Lead Developer, 2018 - present
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Converted ATB’s Business Online platform into an iOS and Android app using Cordova
+* Developed biometric and 2FA authentication flows using JWT and Auth0
+* Developed in app, remote cheque deposits (leveraging native device camera and image analysis technologies)
+* Developed RESTful APIs using Express and microservice architecture
+* Build unit test in Jest and React Testing Library
+* Build mobile e2e tests using Selenium and Experitest, running on physical devices stored in the cloud
+* Build API test using Pytest
+* Configured CI/CD pipelines in GitLab and BitRise
+* Developed responsive, accessible and reusable react components
+* Performed diligent and constructive code reviews
+* KT and mentored new devs
 
-### `npm run build`
+##### Online Banking, 2017 - 2018
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Full stack development of a React web applications using Redux, Babel, Webpack, ES6, and Node.js
+* Developed responsive, accessible and reusable react components
+* Developed e-transfer, bill payment, and account summary modules
+* Developed RESTful APIs using Express and microservice architecture
+* Build unit test in Jest and React Testing Library
+* Build e2e tests in Selenium
+* Build API test using Pytest
+* Configured CI/CD pipelines in GitLab and BitRise
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### Retail Banking Mobile, 2016 - 2017
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Development of ATB's retail baking mobile and web platform using HTML5 and Cordova
+* Developed remote cheque deposit, e-transfer, bill payment and account summary modules
+* Configured CI/CD pipelines in Jenkins
+* Tech Used: HTML5, CSS, Bootstrap, SVN, Jenkins, SAP Mobile Platform, SOAP
 
-### `npm run eject`
+##### ATB Flexible Pension Plan, 2015 - 2016
+* Developed an internal .NET app to allow ATB team members to update or make changes to their pension
+* Tech Used: C#, ASP.NET, SQL Server, SOAP, SVN, NUnit.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##### ATB Customer Service Application (CSA), 2013 - 2015
+* Development and operational support of an internal desktop app used by our customer service teams in ATB branches.
+* Tech Used: Java (Swing), Object Oriented Programming (OOP), Eclipse, DB2, Axis2, SOAP, J2EE, SVN, CVS, Apache Ant.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Education 👩🏻‍🎓
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Northern Alberta Institute of Technology (NAIT)
+Digital Media and IT Diploma
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Other
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ATB Engineering Culture Excellence Award Winner, 2021
+Awarded to ATB team members who have gone above and beyond to exemplify ATB’s Engineering Culture.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### ATB Hackday - Fan Favourite Winner, 2019
+Developed a plugin that standardizes APIs creation at ATB, speeding up dev time, improving code quality and logging.
 
-### Code Splitting
+### HackEDbeta at Startup Edmonton, 2017
+Volunteered as a Mentor at this beginner friendly hackathon
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Apple Worldwide Developers Conference  (WDDC), 2017
+Attended session regarding Apple Pay, Swift, Accessibility, Core ML, and AR.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Google cloud relay, 2018
+Wrote a google cloud hosted React app that provides a ski condition forecast, in this 6 hours relay event.
