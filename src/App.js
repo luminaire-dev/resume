@@ -153,11 +153,11 @@ function App() {
               <li>Development of ATB's retail banking mobile and web platform using HTML5 and Cordova</li>
               <li>Developed remote cheque deposit, e-transfer, bill payment, and account summary modules</li>
               <li>Configured CI/CD pipelines in Jenkins</li>
-              <li>Tech sed: HTML5, CSS, Bootstrap, SVN, Jenkins, SAP Mobile Platform, SOAP</li>
+              <li>Tech Used: HTML5, CSS, Bootstrap, SVN, Jenkins, SAP Mobile Platform, SOAP</li>
 
             <h4>ATB Flexible Pension Plan, 2015 - 2016</h4>
             <li>Developed an internal .NET app to allow ATB team members to update or make changes to their pension</li>
-            <li>Tech sed: C#, ASP.NET, SQL Server, SOAP, SVN, NUnit.</li>
+            <li>Tech Used: C#, ASP.NET, SQL Server, SOAP, SVN, NUnit.</li>
             <li>ATB Customer Service Application (CSA), 2013 - 2015</li>
             <li>Development and operational support of an internal desktop app used by our customer service teams in ATB branches.</li>
             <li>Tech Used: Java (Swing), Object Oriented Programming (OOP), Eclipse, DB2, Axis2, SOAP, J2EE, SVN, CVS, Apache Ant.</li>
