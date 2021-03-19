@@ -164,7 +164,7 @@ function App() {
 
             <Heading>Education 👩🏻‍🎓</Heading>
             <h4>Digital Media and IT Diploma - Northern Alberta Institute of Technology (NAIT)</h4>
-            <p><b>Capstone Project</b>: Remodled and rebuilt an Access 97 database in SQL using Private/Foreign keys and stored proceedures. Our Client was Alberta Health Services.</p>
+            <p><b>Capstone Project</b>: Remodeled and rebuilt an Access 97 database in SQL using Private/Foreign keys and stored proceedures. Our Client was Alberta Health Services.</p>
 
             <Heading>Other</Heading>
             <h3>ATB Engineering Culture Excellence Award Winner, 2021</h3>
