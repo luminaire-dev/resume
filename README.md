@@ -52,7 +52,7 @@ Agile/SCRUM/Kanban, Trunk Based Development, Continuous Integration (CI), Contin
 ### Northern Alberta Institute of Technology (NAIT)
 #### Digital Media and IT Diploma
 ##### Capstone Project:
-Remodled and rebuilt an Access 97 database in SQL using Private/Foreign keys and stored proceedures. Our Client was Alberta Health Services.
+Remodeled and rebuilt an Access 97 database in SQL using Private/Foreign keys and stored proceedures. Our Client was Alberta Health Services.
 ## Other
 ### ATB Engineering Culture Excellence Award Winner, 2021
 Awarded to ATB team members who have gone above and beyond to exemplify ATB’s Engineering Culture.
