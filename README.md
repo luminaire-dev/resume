@@ -1,4 +1,4 @@
-My resume in react: https://luminaire-dev.github.io/resume/
+My resume, built it React: https://luminaire-dev.github.io/resume/
 
 Markdown version:
 
