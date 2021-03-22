@@ -1,9 +1,13 @@
+My resume in react: https://luminaire-dev.github.io/resume/
+
+Markdown version:
+
 # Leila Elkhalidy
 ###### Full Stack Developer • Edmonton, AB • leila.elkhalidy@gmail.com
 
 Hi there, I'm Leila. 👋
 
-I create simple, elegant solutions for complex problems. I started my coding journey at age 10 when I discovered I could modify the source code to my neopets page. Fast forward to today: I’m building customer facing web and mobile banking solutions at ATB Financial. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious, I love working on teams, and I’m one of those people who puts ketchup on their poutine. 🤭
+I create simple, elegant solutions for complex problems. With over 8 yeas of development experience - I beleive that code is art and that both front and back-end problems require creative, beautifully crafted solutions. I'm currently working at ATB Financial, writting web and mobile banking apps in React, and scalable, RESTful microservices in Express. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious, I love working on teams, and I’m one of those weird people who puts ketchup on their poutine. 🤭
 ## Tech Stack 📚
 JavaScript/ES6, React, Redux, Bable, Webpack, Node.js, Express, Cordova, JSON, XML, CSS, SOAP, REST, Json Web Tokens (JWT), Python, Pytes, Jest, Experitest (Mobile test automation), MongoDB, Java, Git, GitLab, Bitrise, Jenkins, Bitbucket, auth0
 ## Development Practices 👩🏻‍💻
@@ -13,9 +17,9 @@ Agile/SCRUM/Kanban, Trunk Based Development, Continuous Integration (CI), Contin
 ###### May 2013 - Present, Edmonton AB
 ##### Business Banking Mobile - Lead Developer, 2018 - present
 * Converted ATB’s Business Online platform into an iOS and Android app using Cordova
+* Developed RESTful APIs using Express and microservice architecture
 * Developed biometric and 2FA authentication flows using JWT and Auth0
 * Developed in-app remote cheque deposits (leveraging native device camera and image analysis technologies)
-* Developed RESTful APIs using Express and microservice architecture
 * Built unit test in Jest and React Testing Library
 * Built mobile e2e tests - using Selenium and Experitest - running on physical devices stored in the cloud
 * Built API test using Pytest
@@ -51,9 +55,8 @@ Agile/SCRUM/Kanban, Trunk Based Development, Continuous Integration (CI), Contin
 ## Education 👩🏻‍🎓
 ### Northern Alberta Institute of Technology (NAIT)
 #### Digital Media and IT Diploma
-##### Capstone Project:
-Remodled and rebuilt an Access 97 database in SQL using Private/Foreign keys and stored proceedures. Our Client was Alberta Health Services.
-## Other
+
+## Community 🌳
 ### ATB Engineering Culture Excellence Award Winner, 2021
 Awarded to ATB team members who have gone above and beyond to exemplify ATB’s Engineering Culture.
 ### ATB Hackday - Fan Favourite Winner, 2019
