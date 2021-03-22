@@ -1,12 +1,14 @@
 import './App.css';
 import styled from 'styled-components';
+import gitHubIcon from './github.png';
+import emailIcon from './email.png';
 
 const ResumeWrapper = styled.div`
   margin 2rem 5rem ;
   padding: 2rem;
   @media only screen and (max-width: 550px) {
-    margin 1rem;
-    padding: 1rem;
+    margin 1rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
   border-radius: 0.5rem;
   opacity: 90%;
@@ -15,11 +17,25 @@ const ResumeWrapper = styled.div`
 `
 
 const Description = styled.div`
+  padding: 0rem 1.7rem;
+  font-size: 1rem;
   padding-bottom: 1rem;
   letter-spacing: 0.20rem;
+  opacity: 0;
+  animation: fadeIn ease 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
 
   @media only screen and (max-width: 550px) {
     letter-spacing: 0rem;
+  }
+`
+
+const Flex = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 700px) {
+    display: block;
   }
 `
 
@@ -58,7 +74,7 @@ const Caret = styled.div`
   font-size: 1.75rem;
   @media only screen and (max-width: 550px) {
     font-size: 1.25rem;
-    padding-right: 1rem;
+    padding: 0 0.5rem;
   }
 `
 
@@ -88,31 +104,54 @@ const Title = styled.div`
   }
 `
 
+const IconLinks = styled.img`
+  width: 2.5rem;
+  margin: 0.75rem 2rem 0 0  ;
+  opacity: 0;
+  animation: fadeIn ease 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+
+  @media only screen and (max-width: 700px) {
+    width: 1.2rem;
+    padding: 0 0 0 1.5rem ;
+    margin: 0 ;
+  }
+
+  &:hover {
+    filter: invert(0%) sepia(100%) saturate(6722%) hue-rotate(262deg) brightness(106%) contrast(124%);
+  }
+`
+
 function App() {
   return (
     <div className="App-body">
       <ResumeWrapper>
-        <div>
-          <Caret>></Caret>
-          <Title>
-            Leila Elkhalidy
-          </Title>
-        </div>
+        <Flex>
+          <div>
+            <Caret>></Caret>
+            <Title>
+              Leila Elkhalidy
+            </Title>
+            <Description>Full Stack Developer</Description>
+          </div>
+          <div>
+            <a href="https://github.com/luminaire-dev" target="_blank" rel="noopener noreferrer">
+              <IconLinks src={gitHubIcon} alt="Git Hub" href="https://github.com/luminaire-dev" />
+            </a>
+            <a href="mailto:leila.elkhalidy@gmail.com">
+              <IconLinks src={emailIcon} alt="Git Hub" />
+            </a>
+          </div>
+        </Flex>
         <ResumeBody>
-          <Description>Full Stack Developer</Description>
-
-
-          {
-              // <img src={gitHubIcon} alt="Git Hub" width="8%" height="8%" />
-          }
-
-
             <Heading>Hi there, I'm Leila. 👋</Heading>
-            <p>I create simple, elegant solutions for complex problems. I started my coding journey at age 10 when I discovered
-            I could modify the source code to my neopets page. Fast forward to today: I’m building customer-facing web and mobile
-             banking solutions at ATB Financial. As the Lead Developer on the Business Banking Mobile project, I’m continuously
-             striving to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally
-             curious, I love working on teams, and I’m one of those people who puts ketchup on their poutine. 🤭</p>
+            <p>I create simple, elegant solutions for complex problems. With over 8 yeas of development experience -
+            I beleive that code is art and that both front and back-end problems require creative, beautifully crafted solutions.
+            I'm currently working at ATB Financial, writting web and mobile banking apps in React, and scalable, RESTful
+            microservices in Express. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving
+            to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious,
+            I love working on teams, and I’m one of those weird people who puts ketchup on their poutine. 🤭</p>
 
             <Heading>Tech Stack 📚</Heading>
             <p>JavaScript/ES6, React, Redux, Bable, Webpack, Node.js, Express, Cordova, JSON, XML, CSS, SOAP, REST, Json Web Tokens (JWT),
@@ -128,9 +167,9 @@ function App() {
 
             <h4> Business Banking Mobile  - Lead Developer, 2018 - present </h4>
               <li>Converted ATB’s Business Online platform into an iOS and Android app using Cordova</li>
+              <li>Developed RESTful APIs using Express and microservice architecture</li>
               <li>Developed biometric and 2FA authentication flows using JWT and Auth0</li>
               <li>Developed in-app remote cheque deposits (leveraging native device camera and image analysis technologies)</li>
-              <li>Developed RESTful APIs using Express and microservice architecture</li>
               <li>Built unit test in Jest and React Testing Library</li>
               <li>Built mobile e2e tests - using Selenium and Experitest - running on physical devices stored in the cloud</li>
               <li>Built API test using Pytest</li>
@@ -164,9 +203,8 @@ function App() {
 
             <Heading>Education 👩🏻‍🎓</Heading>
             <h4>Digital Media and IT Diploma - Northern Alberta Institute of Technology (NAIT)</h4>
-            <p><b>Capstone Project</b>: Remodeled and rebuilt an Access 97 database in SQL using Private/Foreign keys and stored proceedures. Our Client was Alberta Health Services.</p>
 
-            <Heading>Other</Heading>
+            <Heading>Community 🌳</Heading>
             <h3>ATB Engineering Culture Excellence Award Winner, 2021</h3>
             <p>Awarded to ATB team members who have gone above and beyond to exemplify ATB’s Engineering Culture.</p>
 
