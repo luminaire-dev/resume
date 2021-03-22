@@ -46,6 +46,11 @@ const ResumeBody = styled.div`
   animation: fadeIn ease 4s;
   animation-fill-mode: forwards;
   animation-delay: 3s;
+  >li {
+    padding-left: 2rem;
+    text-indent: -1.3rem;
+
+  }
 
   @keyframes fadeIn {
     0% {opacity:0;}
@@ -146,8 +151,9 @@ function App() {
         </Flex>
         <ResumeBody>
             <Heading>Hi there, I'm Leila. 👋</Heading>
-            <p>I create simple, elegant solutions for complex problems. With over 8 yeas of development experience -
-            I beleive code is art and that both front and back-end problems require creative, beautifully crafted solutions.
+            <p>I create simple, elegant solutions for complex problems. With over 8 years of development experience -
+            I beleive code is art just as much as it is science. My ideal solution to both front-end and back-end problems,
+            lies at the intersection between design and functionality.
             I'm currently working at ATB Financial, writting web and mobile banking apps in React, and scalable, RESTful
             microservices in Express. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving
             to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious,
@@ -197,7 +203,8 @@ function App() {
             <h4>ATB Flexible Pension Plan, 2015 - 2016</h4>
             <li>Developed an internal .NET app to allow ATB team members to update or make changes to their pension</li>
             <li>Tech Used: C#, ASP.NET, SQL Server, SOAP, SVN, NUnit</li>
-            <li>ATB Customer Service Application (CSA), 2013 - 2015</li>
+
+            <h4>ATB Customer Service Application (CSA), 2013 - 2015</h4>
             <li>Development and operational support of an internal desktop app used by our customer service teams in ATB branches</li>
             <li>Tech Used: Java (Swing), Object Oriented Programming (OOP), Eclipse, DB2, Axis2, SOAP, J2EE, SVN, CVS, Apache Ant</li>
 
