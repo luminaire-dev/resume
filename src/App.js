@@ -147,7 +147,7 @@ function App() {
         <ResumeBody>
             <Heading>Hi there, I'm Leila. 👋</Heading>
             <p>I create simple, elegant solutions for complex problems. With over 8 yeas of development experience -
-            I beleive that code is art and that both front and back-end problems require creative, beautifully crafted solutions.
+            I beleive code is art and that both front and back-end problems require creative, beautifully crafted solutions.
             I'm currently working at ATB Financial, writting web and mobile banking apps in React, and scalable, RESTful
             microservices in Express. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving
             to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious,
