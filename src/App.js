@@ -154,7 +154,7 @@ function App() {
             <p>I create simple, elegant solutions for complex problems. With over 8 years of development experience -
             I beleive code is art just as much as it is science. My ideal solution to both front-end and back-end problems,
             lies at the intersection between design and functionality.
-            I'm currently working at ATB Financial, writting web and mobile banking apps in React, and scalable, RESTful
+            I'm currently working at ATB Financial, writing web and mobile banking apps in React, and scalable, RESTful
             microservices in Express. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving
             to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious,
             I love working on teams, and I’m one of those weird people who puts ketchup on their poutine. 🤭</p>
