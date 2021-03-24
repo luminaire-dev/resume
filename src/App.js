@@ -67,12 +67,6 @@ const Heading = styled.div`
   }
 `
 
-const SubHeading = styled.div`
-  font-size: 1rem;
-  font-weight: bold;
-  padding-top: ${props => props.noPadding ? 0 : "1rem"};
-`
-
 const Caret = styled.div`
   float: left;
   padding-right: 0.5rem;
@@ -128,6 +122,10 @@ const IconLinks = styled.img`
   }
 `
 
+const CommunityContent = styled.p`
+  padding-bottom: 1rem;
+`
+
 function App() {
   return (
     <div className="App-body">
@@ -151,13 +149,7 @@ function App() {
         </Flex>
         <ResumeBody>
             <Heading>Hi there, I'm Leila. 👋</Heading>
-            <p>I create simple, elegant solutions for complex problems. With over 8 years of development experience -
-            I beleive code is art just as much as it is science. My ideal solution to both front-end and back-end problems,
-            lies at the intersection between design and functionality.
-            I'm currently working at ATB Financial, writing web and mobile banking apps in React, and scalable, RESTful
-            microservices in Express. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving
-            to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious,
-            I love working on teams, and I’m one of those weird people who puts ketchup on their poutine. 🤭</p>
+            <p>I create simple, elegant solutions for complex problems. With over 8 years of experience, I believe code is art just as much as it is science and thus my development approach seems to lie at the intersection between design and functionality. I'm currently working at ATB Financial, writing customer-facing web and mobile apps in React, as well as backend microservices in Express. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious, I love working on teams, and I’m one of those weird people who puts ketchup on their poutine. 🤭</p>
 
             <Heading>Tech Stack 📚</Heading>
             <p>JavaScript/ES6, React, Redux, Bable, Webpack, Node.js, Express, Cordova, JSON, XML, CSS, SOAP, REST, Json Web Tokens (JWT),
@@ -168,10 +160,10 @@ function App() {
             Microservice Architecture, Unit Testing, Test Automation, Paired Programming, Code Reviews, Test Driven Development</p>
 
             <Heading>Experience 👔</Heading>
-            <SubHeading>Senior Software Developer, ATB Financial</SubHeading>
-            <SubHeading noPadding>May 2013 - Present, Edmonton AB</SubHeading>
+            <h4>Senior Software Developer - ATB Financial, 2013 - Present</h4>
+            <p>ATB Financial is a financial institution that provides services to over 770,000 Albertans. I have worked on the following projects with this company:</p>
 
-            <h4> Business Banking Mobile  - Lead Developer, 2018 - present </h4>
+            <h4> Business Banking Mobile - Lead Developer, 2018 - present </h4>
               <li>Converted ATB’s Business Online platform into an iOS and Android app using Cordova</li>
               <li>Developed RESTful APIs using Express and microservice architecture</li>
               <li>Developed biometric and 2FA authentication flows using JWT and Auth0</li>
@@ -208,24 +200,24 @@ function App() {
             <li>Development and operational support of an internal desktop app used by our customer service teams in ATB branches</li>
             <li>Tech Used: Java (Swing), Object Oriented Programming (OOP), Eclipse, DB2, Axis2, SOAP, J2EE, SVN, CVS, Apache Ant</li>
 
-            <Heading>Education 👩🏻‍🎓</Heading>
+            <br /><Heading>Education 👩🏻‍🎓</Heading>
             <h4>Digital Media and IT Diploma - Northern Alberta Institute of Technology (NAIT)</h4>
 
             <Heading>Community 🌳</Heading>
             <h3>ATB Engineering Culture Excellence Award Winner, 2021</h3>
-            <p>Awarded to ATB team members who have gone above and beyond to exemplify ATB’s Engineering Culture.</p>
+            <CommunityContent>Awarded to ATB team members who have gone above and beyond to exemplify ATB’s Engineering Culture.</CommunityContent>
 
             <h3>ATB Hackday - Fan Favourite Winner, 2019</h3>
-            <p>Developed a plugin that standardizes APIs creation at ATB, speeding up dev time and improving code quality and logging.</p>
+            <CommunityContent>Developed a plugin that standardizes APIs creation at ATB, speeding up dev time and improving code quality and logging.</CommunityContent>
 
             <h3>HackEDbeta at Startup Edmonton, 2017</h3>
-            <p>Volunteered as a Mentor at this beginner-friendly hackathon.</p>
+            <CommunityContent>Volunteered as a Mentor at this beginner-friendly hackathon.</CommunityContent>
 
             <h3>Apple Worldwide Developers Conference (WDDC), 2017</h3>
-            <p>Attended sessions on Apple Pay, Swift, Accessibility, Core ML, and AR.</p>
+            <CommunityContent>Attended sessions on Apple Pay, Swift, Accessibility, Core ML, and AR.</CommunityContent>
 
             <h3>Google Cloud Relay, 2018</h3>
-            <p>In this 6 hours coding relay challenge, I wrote a Google Cloud hosted React app that provides a localized ski condition forecast.</p>
+            <CommunityContent>In this 6 hours coding relay challenge, I wrote a Google Cloud hosted React app that provides a localized ski condition forecast.</CommunityContent>
         </ResumeBody>
       </ResumeWrapper>
     </div>
