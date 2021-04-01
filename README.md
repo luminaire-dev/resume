@@ -7,7 +7,7 @@ Markdown version:
 
 Hi there, I'm Leila. 👋
 
-I create simple, elegant solutions for complex problems. With over 8 years of experience, I believe code is art just as much as it is science and thus my development approach seems to lie at the intersection between design and functionality. I'm currently working at ATB Financial, writing customer-facing web and mobile apps in React, as well as backend microservices in Express. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious, I love working on teams, and I’m one of those weird people who puts ketchup on their poutine. 🤭
+I create simple, elegant solutions for complex problems. With over 8 years of experience, I believe code is art just as much as it is science and thus my development approach lies at the intersection between design and functionality. I'm currently working at ATB Financial, writing customer-facing web and mobile apps in React, as well as backend microservices in Express. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious, I love working on teams, and I’m one of those weird people who puts ketchup on their poutine. 🤭
 ## Tech Stack 📚
 JavaScript/ES6, React, Redux, Bable, Webpack, Node.js, Express, Cordova, JSON, XML, CSS, SOAP, REST, Json Web Tokens (JWT), Python, Pytes, Jest, Experitest (Mobile test automation), MongoDB, Java, Git, GitLab, Bitrise, Jenkins, Bitbucket, auth0
 ## Development Practices 👩🏻‍💻
