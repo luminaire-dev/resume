@@ -2,25 +2,53 @@ import './App.css';
 import styled from 'styled-components';
 import gitHubIcon from './github.png';
 import emailIcon from './email.png';
+import noise from './noise.svg'
 
 const ResumeWrapper = styled.div`
-  margin 2rem 5rem ;
+  margin 3rem 5rem ;
+  letter-spacing: 0.05rem;
   padding: 2rem;
   @media only screen and (max-width: 550px) {
     margin 1rem 0.5rem;
     padding: 1rem 0.5rem;
   }
-  border-radius: 0.5rem;
-  opacity: 90%;
-  background-image: linear-gradient(purple, #e66327, purple);
+  border-radius: 0.75rem;
+  box-shadow: 5px 5px 10px 8px rgba(0,0,0,.6);
   font-family: monospace;
+  background: 
+	linear-gradient(
+      160deg,
+      rgba(0,0,0,0), 
+      rgba(70, 40, 100, 0.5),
+      rgba(0,0,0,0), 
+      rgba(210,50,50,0.5)
+    ),
+  url(${noise});
+`
+
+const ResumeBody = styled.div`
+  font-size: 1rem;     
+  padding: 0 15rem 0 1.25rem;
+  opacity: 0;
+  animation: fadeIn ease 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  
+  >li {
+    padding-left: 2rem;
+    text-indent: -1.3rem;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 `
 
 const Description = styled.div`
-  padding: 0rem 1.7rem;
+
   font-size: 1rem;
   padding-bottom: 1rem;
-  letter-spacing: 0.20rem;
   opacity: 0;
   animation: fadeIn ease 4s;
   animation-fill-mode: forwards;
@@ -39,67 +67,74 @@ const Flex = styled.div`
   }
 `
 
-const ResumeBody = styled.div`
-  font-size: 1rem;
-  padding: 0rem 1.7rem;
-  opacity: 0;
-  animation: fadeIn ease 4s;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
-  >li {
-    padding-left: 2rem;
-    text-indent: -1.3rem;
+const Heading = styled.div`
+  font-size: 1.25rem;
+  padding-top: 1rem;
 
-  }
-
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  color: pink;
+  @media only screen and (max-width: 550px) {
+    font-size: 1.25rem;
   }
 `
 
-const Heading = styled.div`
-  font-size: 1.5rem;
-  font-weight: bold;
+const SubHeading = styled.div`
+  font-size: 1rem;
   padding-top: 1rem;
   @media only screen and (max-width: 550px) {
     font-size: 1.25rem;
   }
 `
 
-const Caret = styled.div`
-  float: left;
-  padding-right: 0.5rem;
-  font-size: 1.75rem;
-  @media only screen and (max-width: 550px) {
-    font-size: 1.25rem;
-    padding: 0 0.5rem;
-  }
-`
-
-const Title = styled.div`
-  font-size: 1.75rem;
+const WhoAmI = styled.div`
+  font-size: 1.5rem;
   display: flex;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 1.25rem transparent solid;
+  border-right: 1rem transparent solid;
   @media only screen and (max-width: 550px) {
     border-right: 1rem transparent solid;
     font-size: 1.25rem;
     max-width: 12rem;
     font-weight: bold;
   }
-  animation: animated-text 1s steps(12,end) 1s 1 normal both,
-             animated-cursor 700ms steps(29,end) 5;
+  animation: animated-text 0.75s steps(12,end) 0.75s 1 normal both,
+             animated-cursor 900ms steps(29,end) 5;
 
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 16.5rem;}
+    to{width: 6rem;}
   }
 
   @keyframes animated-cursor{
-    from{border-color: orange;}
+    from{border-color: pink;}
     to{border-color: transparent);}
+  }
+`
+
+const Name = styled.div`
+  font-size: 1.5rem;
+
+  color: pink;
+  @media only screen and (max-width: 550px) {
+    font-size: 1.25rem;
+  }
+`
+
+const Title = styled.div`
+  font-weight: bold;
+  font-size: 1.05rem;
+  padding-bottom: 1rem;
+  @media only screen and (max-width: 550px) {
+    font-size: 1.25rem;
+  }
+`
+const Caret = styled.div`
+  float: left;
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+  @media only screen and (max-width: 550px) {
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
   }
 `
 
@@ -123,7 +158,7 @@ const IconLinks = styled.img`
 `
 
 const CommunityContent = styled.p`
-  padding-bottom: 1rem;
+  font-size: 0.80rem;
 `
 
 function App() {
@@ -133,10 +168,9 @@ function App() {
         <Flex>
           <div>
             <Caret>></Caret>
-            <Title>
-              Leila Elkhalidy
-            </Title>
-            <Description>Full Stack Developer</Description>
+            <WhoAmI>
+              whoami
+            </WhoAmI>
           </div>
           <div>
             <a href="https://github.com/luminaire-dev" target="_blank" rel="noopener noreferrer">
@@ -148,20 +182,22 @@ function App() {
           </div>
         </Flex>
         <ResumeBody>
-            <Heading>Hi there, I'm Leila. 👋</Heading>
-            <p>I create simple, elegant solutions for complex problems. With over 8 years of experience, I believe code is art just as much as it is science and thus my development approach lies at the intersection between design and functionality. I'm currently working at ATB Financial, writing customer-facing web and mobile apps in React, as well as backend microservices in Express. As the Lead Developer on the Business Banking Mobile project, I’m continuously striving to improve code quality, testing coverage, and delivery cycles to better serve our customers. I’m naturally curious, I love working on teams, and I’m one of those weird people who puts ketchup on their poutine. 🤭</p>
 
-            <Heading>Tech Stack 📚</Heading>
-            <p>JavaScript/ES6, React, Redux, Bable, Webpack, Node.js, Express, Cordova, JSON, XML, CSS, SOAP, REST, Json Web Tokens (JWT),
-            Python, Pytes, Jest, Experitest (Mobile test automation), MongoDB, Java, Git, GitLab, Bitrise, Jenkins, Bitbucket, auth0</p>
+        <Name>Leila Elkhalidy  </Name>
+        <Title>Sr. Software Engineer </Title>
+            <Description>I create simple, elegant solutions for complex problems. With over 10 years of experience, I believe code is art just as much as it is science and my approach lies at the intersection between design and functionality. </Description>
 
-            <Heading>Development Practices 👩🏻‍💻</Heading>
-            <p>Agile/SCRUM/Kanban, Trunk Based Development, Continuous Integration (CI), Continuous Deployment (CD), Feature Toggling,
-            Microservice Architecture, Unit Testing, Test Automation, Paired Programming, Code Reviews, Test Driven Development</p>
+            <Heading>Tech Stack</Heading>
+            <Description>GoLang, PostgreSQL, AWS, AWSCLI, Terraform, JavaScript/ES6, React, Redux, Bable, Webpack, Node.js, Express, Cordova, JSON, XML, CSS, SOAP, REST, Json Web Tokens (JWT),
+            Python, Pytes, Jest, Experitest (Mobile test automation), MongoDB, Java, Git, GitLab, Bitrise, Jenkins, Bitbucket, auth0</Description>
 
-            <Heading>Experience 👔</Heading>
+            <Heading>Dev Practices</Heading>
+            <Description>Agile/SCRUM/Kanban, Trunk Based Development, Continuous Integration (CI), Continuous Deployment (CD), Feature Toggling,
+            Microservice Architecture, Unit Testing, Test Automation, Paired Programming, Code Reviews, Test Driven Development</Description>
+
+            <Heading>Experience</Heading>
             <h4>Senior Software Developer - ATB Financial, 2013 - Present</h4>
-            <p>ATB Financial is a financial institution that provides services to over 770,000 Albertans. I have worked on the following projects with this company:</p>
+            <Description>ATB Financial is a financial institution that provides services to over 770,000 Albertans. I have worked on the following projects with this company:</Description>
 
             <h4> Business Banking Mobile - Lead Developer, 2018 - present </h4>
               <li>Converted ATB’s Business Online platform into an iOS and Android app using Cordova</li>
@@ -200,23 +236,26 @@ function App() {
             <li>Development and operational support of an internal desktop app used by our customer service teams in ATB branches</li>
             <li>Tech Used: Java (Swing), Object Oriented Programming (OOP), Eclipse, DB2, Axis2, SOAP, J2EE, SVN, CVS, Apache Ant</li>
 
-            <br /><Heading>Education 👩🏻‍🎓</Heading>
+            <br /><Heading>Education</Heading>
             <h4>Digital Media and IT Diploma - Northern Alberta Institute of Technology (NAIT)</h4>
 
-            <Heading>Community 🌳</Heading>
-            <h3>ATB Engineering Culture Excellence Award Winner, 2021</h3>
+            <Heading>Extra curricular / Community</Heading>
+            <SubHeading>Women Who Go 2022 - present </SubHeading>
+            <CommunityContent> organizer </CommunityContent>
+
+            <SubHeading>ATB Eng Culture Excellence Award Winner, 2021</SubHeading>
             <CommunityContent>Awarded to ATB team members who have gone above and beyond to exemplify ATB’s Engineering Culture.</CommunityContent>
 
-            <h3>ATB Hackday - Fan Favourite Winner, 2019</h3>
+            <SubHeading>ATB Hackday - Fan Favourite Winner, 2019</SubHeading>
             <CommunityContent>Developed a plugin that standardizes APIs creation at ATB, speeding up dev time and improving code quality and logging.</CommunityContent>
 
-            <h3>HackEDbeta at Startup Edmonton, 2017</h3>
+            <SubHeading>HackEDbeta at Startup Edmonton, 2017</SubHeading>
             <CommunityContent>Volunteered as a Mentor at this beginner-friendly hackathon.</CommunityContent>
 
-            <h3>Apple Worldwide Developers Conference (WDDC), 2017</h3>
+            <SubHeading>Apple Worldwide Developers Conference (WDDC), 2017</SubHeading>
             <CommunityContent>Attended sessions on Apple Pay, Swift, Accessibility, Core ML, and AR.</CommunityContent>
 
-            <h3>Google Cloud Relay, 2018</h3>
+            <SubHeading>Google Cloud Relay, 2018</SubHeading>
             <CommunityContent>In this 6 hours coding relay challenge, I wrote a Google Cloud hosted React app that provides a localized ski condition forecast.</CommunityContent>
         </ResumeBody>
       </ResumeWrapper>
