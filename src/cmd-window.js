@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import gitHubIcon from './github.png';
 import emailIcon from './email.png';
 import noise from './noise.svg'
+import { WhoAmiCmd, ExperienceCmd, CommunityCmd, OtherThingsCmd } from './globals.js';
 
 const CLIWrapper = styled.div`
   margin: 3rem 3rem 0 5rem; 
@@ -26,7 +27,7 @@ const CLIWrapper = styled.div`
 `
 
 const Body = styled.div`    
-  padding: 0 2rem 0 1.25rem;
+  padding: 1rem 2rem 0 1.25rem;
   opacity: 0;
   animation: fadeIn ease 2s;
   animation-fill-mode: forwards;
@@ -68,14 +69,6 @@ const Heading = styled.div`
   }
 `
 
-const SubHeading = styled.div`
-  font-size: 1rem;
-  padding-top: 1rem;
-  @media only screen and (max-width: 550px) {
-    font-size: 1.25rem;
-  }
-`
-
 const CmdName = styled.div`
   font-size: 1.5rem;
   display: flex;
@@ -93,7 +86,10 @@ const CmdName = styled.div`
 
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 6rem;}
+    to{width: ${(props) => (props.activeNavItem.length)}rem;}
+
+    ackgroundColor: isSpecial ? 'yellow' : 'white',
+    color: isSpecial ? 'red' : 'black',
   }
 
   @keyframes animated-cursor{
@@ -131,7 +127,7 @@ const Caret = styled.div`
 
 const IconLinks = styled.img`
   width: 2.5rem;
-  margin: 0.75rem 2rem 0 0  ;
+  margin: 0 2rem 0 0 ;
   opacity: 0;
   animation: fadeIn ease 2s;
   animation-fill-mode: forwards;
@@ -149,19 +145,58 @@ const IconLinks = styled.img`
 `
 
 
-function CmdWindow() {
+const CmdWindow = ({ activeNavItem }) => {
+  console.log(activeNavItem)
   return (
     <div>
-      <CLIWrapper>
+    {
+      activeNavItem === WhoAmiCmd && (
+        <CLIWrapper>
+          <div>{cmdTitle(activeNavItem)}</div>
+          <div>{whoami()}</div>
+        </CLIWrapper>
+      )
+    }
+     {
+      activeNavItem === ExperienceCmd && (
+        <CLIWrapper>
+          <div> {cmdTitle(activeNavItem)}</div>
+          <div> {experience()}</div>
+        </CLIWrapper>
+      )
+    }
+    {
+      activeNavItem === CommunityCmd && (
+        <CLIWrapper>
+          <div> {cmdTitle(activeNavItem)}</div>
+          <div> {community()}</div>
+        </CLIWrapper>
+      )
+    }
+    {
+      activeNavItem === OtherThingsCmd && (
+        <CLIWrapper>
+          <div> {cmdTitle(activeNavItem)}</div>
+          <div> {otherthings()}</div>
+        </CLIWrapper>
+      )
+    }
+
+    </div>
+  );
+}
+
+const cmdTitle = (activeNavItem) => {
+  return (
         <Flex>
           <div>
             <Caret>></Caret>
-            <CmdName>
-              whoami
+            <CmdName activeNavItem={activeNavItem}>
+              {activeNavItem}
             </CmdName>
           </div>
           <div>
-            <a href="https://github.com/luminaire-dev" target="_blank">
+            <a href="https://github.com/luminaire-dev" target="_blank" rel="noopener noreferrer">
               <IconLinks src={gitHubIcon} alt="Git Hub" href="https://github.com/luminaire-dev" />
             </a>
             <a href="mailto:leila.elkhalidy@gmail.com">
@@ -169,6 +204,11 @@ function CmdWindow() {
             </a>
           </div>
         </Flex>
+  );
+}
+
+const whoami = () => {
+  return (
         <Body>
 
         <Name>Leila Elkhalidy  </Name>
@@ -184,9 +224,32 @@ function CmdWindow() {
             Microservice Architecture, Unit Testing, Test Automation, Paired Programming, Code Reviews, Test Driven Development</Description>
 
         </Body>
-      </CLIWrapper>
-    </div>
   );
 }
+
+const experience = () => {
+  return (
+      <Body>
+        i got hella
+      </Body>
+  );
+}
+
+const otherthings = () => {
+  return (
+      <Body>
+        some cool other things about me
+      </Body>
+  );
+}
+
+const community = () => {
+  return (
+      <Body>
+        i do give a shit about community
+      </Body>
+  );
+}
+
 
 export default CmdWindow;

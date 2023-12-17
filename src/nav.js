@@ -1,6 +1,7 @@
 import './App.css';
 import styled from 'styled-components';
 import noise from './noise.svg'
+import { WhoAmiCmd, ExperienceCmd, CommunityCmd, OtherThingsCmd } from './globals.js';
 
 const NavWrapper = styled.div`
 margin: 3rem 0; 
@@ -11,7 +12,7 @@ box-shadow: 5px 5px 10px 8px rgba(0,0,0,.3);
 background: 
 	linear-gradient(
       200deg,
-      rgba(255,20,50,0.15),
+      rgba(255,20,50,0.1),
       rgba(0,0,0,0)
     ),
   url(${noise});
@@ -37,27 +38,29 @@ const Caret = styled.div`
 `
 
 
-const Nav = () => {
-  const handleButtonClick = () => {
-    console.log("button clicked");
-  };
+const Nav = ({ activeNavItem, setActiveNavItem }) => {
+
+
+const handleNavItemClick = (itemName) => {
+  setActiveNavItem(itemName);
+};
 
   return (
     <div>
      <NavWrapper>
-     <NavItem onClick={handleButtonClick}>
+     <NavItem onClick={() => handleNavItemClick(WhoAmiCmd)}>
       <Caret className="caret">></Caret>
       whoami_
       </NavItem>
-      <NavItem>
+      <NavItem onClick={() => handleNavItemClick(ExperienceCmd)}>
      <Caret className="caret">></Caret>
      experience_
      </NavItem>
-     <NavItem>
+     <NavItem onClick={() => handleNavItemClick(CommunityCmd)}>
      <Caret className="caret">></Caret>
      community_
      </NavItem>
-     <NavItem>
+     <NavItem onClick={() => handleNavItemClick(OtherThingsCmd)}>
      <Caret className="caret">></Caret>
      otherthings_
      {/* youtube channel / favourite albums / what you do for fun/ converstion starters */}
