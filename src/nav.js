@@ -1,21 +1,10 @@
-import './App.css';
 import styled from 'styled-components';
-import noise from './noise.svg'
 import { WhoAmiCmd, ExperienceCmd, CommunityCmd, OtherThingsCmd } from './globals.js';
 
 const NavWrapper = styled.div`
-margin: 3rem 0; 
+margin-top: 3rem;
 padding: 2rem;
 width: 15rem;
-border-radius: 0.75rem;
-box-shadow: 5px 5px 10px 8px rgba(0,0,0,.3);
-background: 
-	linear-gradient(
-      200deg,
-      rgba(255,20,50,0.1),
-      rgba(0,0,0,0)
-    ),
-  url(${noise});
 
 `
 const NavItem = styled.button`
@@ -38,7 +27,7 @@ const Caret = styled.div`
 `
 
 
-const Nav = ({ activeNavItem, setActiveNavItem }) => {
+const Nav = ({ setActiveNavItem }) => {
 
 
 const handleNavItemClick = (itemName) => {
