@@ -2,6 +2,7 @@
 import styled, {keyframes} from 'styled-components';
 import { useState } from 'react';
 import { Koho, Atb, Education } from './globals.js';
+import { colors } from './themes.js';
 
 
 const Description = styled.div`
@@ -16,29 +17,21 @@ const Flex = styled.div`
 `
 
 const Heading = styled.div`
-  color: rgba(255,160,180,1);
-  font-size: 1.25rem;
-  padding-top: 1rem;
+  color: ${colors.priamry};
+  font-size: 1.3rem;
+  padding: 1rem 0 0.25rem 0;
+  letter-spacing: 0.1rem;
 `
 
-const animateBlink = (selected) => keyframes`
-  from{
-    background-color: transparent;
-  }
-  to{
-    background-color: rgba(64,56,34,1));
-  }
-`;
 
 const ExperienceNavItem = styled.button`
-  background-color: ${(props) => props.selected ? 'rgba(64,56,34,1)': 'transparent'};
-  color: rgba(100,255,100,1);
-  margin: 0 1rem 0 0rem;
+  background-color: ${(props) => props.selected ? colors.secondary : 'transparent'};
+  color: ${(props) => props.selected ? 'white' : colors.secondary};
+  margin: 0 3.5rem 0 0rem;
   font: inherit;
   font-size: 1.15rem;
   border: none;
   cursor: pointer;
-  animation: ${(props) => animateBlink(props.selected)} 900ms steps(29,end) 5;
 `
 
 const Experiene = () => {

@@ -3,22 +3,23 @@ import styled, {keyframes} from 'styled-components';
 import noise from './noise.svg'
 import Experience from './experience.js';
 import { WhoAmiCmd, ExperienceCmd, CommunityCmd, OtherThingsCmd } from './globals.js';
+import { colors } from './themes.js';
 
 const CLIWrapper = styled.div`
-  width: 62rem;
-  height: 35rem;
+  width: 55rem;
+  height: 30rem;
   padding: 2rem;
   border-radius: 0.75rem;
   box-shadow: 5px 5px 10px 8px rgba(0,0,0,.3);
-  box-shadow: 0.3rem 0.3rem 1rem 0.5rem rgba(0,0,0,.3);
+  box-shadow: 0.3rem 0.3rem 1rem 0.5rem rgba(0,0,0,.35);
   background: 
 	linear-gradient(
-      190deg,
-      rgba(1,20,100,0.2),
-      rgba(0,0,0,0.1),
-      rgba(120, 40, 100, 0.2)
+    120deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.6)
     ),
-  url(${noise});
+    url(${noise});
 `
 
 const Body = styled.div`    
@@ -35,11 +36,14 @@ const Body = styled.div`
 `
 
 const Description = styled.div`
-  padding-bottom: 1rem;
+  padding-left: 1rem;
   opacity: 0;
   animation: fadeIn ease 1.6s;
   animation-fill-mode: forwards;
   animation-delay: 1.6s;
+  & > a {
+    color: ${colors.priamry};
+  }
 `
 
 const animateText = (length) => keyframes`
@@ -62,27 +66,29 @@ const CmdName = styled.div`
              animated-cursor 800ms steps(29,end) 3;
 
   @keyframes animated-cursor{
-    from{border-color: rgba(255,160,180,1);}
+    from{border-color: ${colors.priamry};}
     to{border-color: transparent);}
   }
 `
 
-const Name = styled.div`
-  color: rgba(255,160,180,1);
-  font-size: 1.5rem;
+const Heading = styled.div`
+  color: ${colors.priamry};
+  font-size: 1.3rem;
+  padding: 1rem 0 0.25rem 0;
+  letter-spacing: 0.1rem;
 `
 
-const Heading = styled.div`
-  color: rgba(255,160,180,1);
-  font-size: 1.25rem;
-  padding-top: 1rem;
+const Name = styled.div`
+  color: ${colors.priamry};
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 `
 
 const Title = styled.div`
-  font-weight: bold;
-  font-size: 1.05rem;
+  font-size: 1rem;
   padding-bottom: 1rem;
 `
+
 const Caret = styled.div`
   float: left;
   padding-right: 0.5rem;
@@ -152,18 +158,35 @@ const cmdTitle = (activeNavItem) => {
 const whoami = () => {
   return (
         <Body>
-        <Name>Leila Elkhalidy  </Name>
-        <Title>Sr. Software Engineer </Title>
-            <Description>I create simple, elegant solutions for complex problems. 
-            </Description>
+          <Name>Leila Elkhalidy</Name>
+          <Title>Sr. Software Engineer - Kelowna, BC </Title>
 
-            <Heading>Tech Stack</Heading>
-            <Description>GoLang, PostgreSQL, AWS, AWSCLI, Terraform, JavaScript/ES6, React, Redux, Bable, Webpack, Node.js, Express, Cordova, JSON, XML, CSS, SOAP, REST, Json Web Tokens (JWT),
-            Python, Pytes, Jest, Experitest (Mobile test automation), MongoDB, Java, Git, GitLab, Bitrise, Jenkins, Bitbucket, auth0</Description>
+          <Description>
+            I create simple, elegant solutions for complex problems. With over 10 years of experience, I bring a wealth of knowledge 
+            and skills gained through pivotal roles in two leading fintech companies (
+              <a href="https://www.koho.ca/" target="_blank" rel="noopener noreferrer">KOHO</a>
+            , <a href="https://www.atb.com/personal/" target="_blank" rel="noopener noreferrer">ATB Financial</a>). 
+          </Description>
+          <br />
+          <Description>
+            In my latest role at KOHO, I worked on the design and development of backend services and internal tools, using Golang, 
+            across various areas of the business. I organized and led several initiatives, including the development of new user, 
+            account, and credit-building features, the migration of legacy monolith code into new, renovated microservices, 
+            and the enhancement of KYC and fraud detection on the platform with new integrations to internal ML models as well as 
+            external vendor endpoints.
+          </Description>
 
-            <Heading>Dev Practices</Heading>
-            <Description>RFC, PR, GIT PIPELINE, Agile/SCRUM/Kanban, Trunk Based Development, Continuous Integration (CI), Continuous Deployment (CD), Feature Toggling,
-            Microservice Architecture, Unit Testing, Test Automation, Paired Programming, Code Reviews, Test Driven Development</Description>
+          <Heading>Tech Stack</Heading>
+          <Description>
+            Golang, JavaScript(ES6), React, Redux, Bable, Webpack, Node, Express, PostgreSQL, Docker, GitHub, Git, DataDog, AWS/AWSCLI,
+            Terraform, Cordova/Ionic, Jenkins, GitLab, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST,  Python, Java, C#
+          </Description>
+
+          <Heading>Dev Practices</Heading>
+          <Description>
+            CI/CD, Feature Toggling, Microservice Architecture, Unit Testing, Integration testing, Observability, Paired Programming, 
+            Code Reviews, Test Driven Development, Test Automation, Agile, Scrum, Kanban, Documentation, RFCs, Mentoring & Feedback
+          </Description>
         </Body>
   );
 }
