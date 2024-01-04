@@ -6,21 +6,13 @@ import { WhoAmiCmd, ExperienceCmd, CommunityCmd, OtherThingsCmd } from './global
 import { colors } from './themes.js';
 
 const CLIWrapper = styled.div`
-  width: 55rem;
-  height: 30rem;
+  width: 60rem;
+  height: 32rem;
   padding: 2rem;
   border-radius: 0.75rem;
-  box-shadow: 5px 5px 10px 8px rgba(0,0,0,.3);
-  box-shadow: 0.3rem 0.3rem 1rem 0.5rem rgba(0,0,0,.35);
-  background: 
-	linear-gradient(
-    120deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(${noise});
+  border: 1px solid rgba(200, 266, 180, 1);
 `
+
 
 const Body = styled.div`    
   padding: 1rem 2rem 0 1.25rem;
@@ -42,7 +34,7 @@ const Description = styled.div`
   animation-fill-mode: forwards;
   animation-delay: 1.6s;
   & > a {
-    color: ${colors.priamry};
+    color: ${colors.green};
   }
 `
 
@@ -66,20 +58,20 @@ const CmdName = styled.div`
              animated-cursor 800ms steps(29,end) 3;
 
   @keyframes animated-cursor{
-    from{border-color: ${colors.priamry};}
+    from{border-color: ${colors.green};}
     to{border-color: transparent);}
   }
 `
 
 const Heading = styled.div`
-  color: ${colors.priamry};
+  color: ${colors.green};
   font-size: 1.3rem;
   padding: 1rem 0 0.25rem 0;
   letter-spacing: 0.1rem;
 `
 
 const Name = styled.div`
-  color: ${colors.priamry};
+  color: ${colors.green};
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
 `
@@ -160,32 +152,30 @@ const whoami = () => {
         <Body>
           <Name>Leila Elkhalidy</Name>
           <Title>Sr. Software Engineer - Kelowna, BC </Title>
-
           <Description>
-            I create simple, elegant solutions for complex problems. With over 10 years of experience, I bring a wealth of knowledge 
-            and skills gained through pivotal roles in two leading fintech companies (
+             I create simple, elegant solutions for complex problems. With over 10 years of experience, 
+             I bring a wealth of knowledge and skills gained through pivotal roles in two leading fintech companies&mdash;
               <a href="https://www.koho.ca/" target="_blank" rel="noopener noreferrer">KOHO</a>
-            , <a href="https://www.atb.com/personal/" target="_blank" rel="noopener noreferrer">ATB Financial</a>). 
+            , <a href="https://www.atb.com/personal/" target="_blank" rel="noopener noreferrer">ATB Financial</a>. 
           </Description>
           <br />
           <Description>
-            In my latest role at KOHO, I worked on the design and development of backend services and internal tools, using Golang, 
-            across various areas of the business. I organized and led several initiatives, including the development of new user, 
-            account, and credit-building features, the migration of legacy monolith code into new, renovated microservices, 
-            and the enhancement of KYC and fraud detection on the platform with new integrations to internal ML models as well as 
-            external vendor endpoints.
+             In my latest role at KOHO, I designed and developed backend solutions using Golang, across various areas of the business. 
+             I took a lead role in mission-critical initiatives, including the development of the Secured Credit Building feature, the 
+             enhancement and tech overhaul of KYC and fraud detection on the platform, and the modernization of the tech landscape with 
+             a migration from monolithic to microservice architecture. 
           </Description>
 
           <Heading>Tech Stack</Heading>
           <Description>
-            Golang, JavaScript(ES6), React, Redux, Bable, Webpack, Node, Express, PostgreSQL, Docker, GitHub, Git, DataDog, AWS/AWSCLI,
+            Golang, JavaScript(ES6), React, Redux, Bable, Webpack, Node, Express, PostgreSQL, Docker, GitHub, Git, DataDog, AWS,
             Terraform, Cordova/Ionic, Jenkins, GitLab, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST,  Python, Java, C#
           </Description>
 
           <Heading>Dev Practices</Heading>
           <Description>
-            CI/CD, Feature Toggling, Microservice Architecture, Unit Testing, Integration testing, Observability, Paired Programming, 
-            Code Reviews, Test Driven Development, Test Automation, Agile, Scrum, Kanban, Documentation, RFCs, Mentoring & Feedback
+            CI/CD, Feature Toggling, Microservice Architecture, Event-Driven Architecture(Pub/Sub), Unit Testing, Integration Testing, Test Automation, 
+            Test Driven Development, Observability, Paired Programming, Code Reviews, Agile, Scrum, Kanban, Documentation, Request for Comments(RFC), Mentoring & Feedback
           </Description>
         </Body>
   );
@@ -203,8 +193,8 @@ const otherthings = () => {
 const community = () => {
   return (
       <Body>
-        Community is important to me... community envolvement:
-        <SubHeading>Women Who Go 2022 - present </SubHeading>
+        In any Community is important to me... community envolvement:
+            <SubHeading>Women Who Go 2022 - present </SubHeading>
             <CommunityContent> organizer </CommunityContent>
 
             <SubHeading>ATB Eng Culture Excellence Award Winner, 2021</SubHeading>
