@@ -1,9 +1,9 @@
 import './global.css';
 import React, { useState } from 'react';
 import CmdWindow from './cmd-window.js';
-import linkedinIcon from './linkedin.png';
-import gitHubIcon from './github.png';
-import emailIcon from './email.png';
+import linkedinIcon from './assets/linkedin.png';
+import gitHubIcon from './assets/github.png';
+import emailIcon from './assets/email.png';
 import Nav from './nav.js';
 import { WhoAmiCmd } from './globals.js';
 import styled from 'styled-components';
