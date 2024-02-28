@@ -5,19 +5,13 @@ import { Koho, Atb, Education } from './globals.js';
 import { colors } from './themes.js';
 import kohoLogo from './assets/koho.png';
 import atbLogo from './assets/atb.png';
-import naitLogo from './assets/nait.png';
+import naitLogo from './assets/nait.svg';
 
 const Title = styled.div`
   padding-top: 1rem;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   color: ${colors.green};
-`
-
-const Heading = styled.div`
-  color: ${colors.green};
-  font-size: 1.3rem;
-  letter-spacing: 0.1rem;
 `
 
 const SubHeading = styled.div`
@@ -33,7 +27,9 @@ const ExperienceSection = styled.div`
 
 const CompanyDesc = styled.p`
   padding-top: 0.3rem;
-  height: 2.5rem;
+  >div {
+    padding: 0.2rem;
+  }
 `
 
 const ExperienceNavItem = styled.button`
@@ -47,7 +43,7 @@ const ExperienceNavItem = styled.button`
 `
 
 const Logo = styled.img`
-  width: 3.25rem;
+  width: 5rem;
   margin: 0.75rem 1rem 0 0  ;
   float: left;
 `
@@ -74,11 +70,37 @@ const Experiene = () => {
             with modern features like credit building and helpful budgeting tools.</CompanyDesc>
           <SubHeading>Secured Credit Building (Jan 2023 - Aug 2023) </SubHeading>
               <ul>
+                <li>
+                  Designed and developed new backend microservice utilizing Golang, go-cron, Docker, AWS, DynamoDB, and Jenkins 
+                  to automate monthly collections of the subscription fees and loan repayments.
+                </li>
+                <li>
+                  Desined and developed new REST endpoints using Golang, go-cron, PostgreSQL, and RabbitMQ to 
+                  manager user's subscription to the feature.
+                </li> 
+                <li>
+                  Implemented a backend process for conducting experiments with different price points, utilizing LaunchDarkly 
+                  flags, control/variant groups, and measuring outcomes in Metabase.
+                </li>
+                <li>Developed a new REST endpoint using Golang, go-cron, PostgreSQL to fetch the user's credit score from Equifax every month. </li>
+                <li>Worked closely with other developers, frequently pairing, mentoring, and performing code reviews.</li>
            
             </ul>
 
-            <SubHeading>Risk, KYC and Fruad (2022 - 2023) </SubHeading>
+            <SubHeading>Risk, KYC and Fraud (2022 - 2023) </SubHeading>
               <ul>
+                <li>Built integrations with various fraud detection tools including threatmetrix, comply advantage, trulioo and onfido.
+                  Spun up a ne risk microservice 
+                  Modernized </li>
+                <li>New risk service, configuratio, pipeline using internal tool</li>
+                <li>Created the solution design and development plan.</li>
+                <li>Migrated monolith into new microservice</li>
+                <li>ML NODEL</li>
+                <li>integrated with comply advantage threatmetrix</li>
+                <li>built unit and intergation test</li>
+                <li>Mentored and paired with other developers and performed constructive code reviews.</li>
+                <li>documented entire kyc flow to date</li>
+                <li>Developed RESTful APIs using Express and microservices architecture.</li>
             </ul>
 
             <SubHeading>Stripe autoload (??? - ???) </SubHeading>
@@ -88,7 +110,7 @@ const Experiene = () => {
 
             <SubHeading>Localization of app (??? - ???) </SubHeading>
               <ul>
-                <li>localization</li>
+                <li>Built BACKEND serving the fe french or english content based on lcation. localization</li>
             </ul>
         </ExperienceSection>
         )
@@ -154,7 +176,9 @@ const Experiene = () => {
         <ExperienceSection>
           <Title>Northern Alberta Institute of Technology (NAIT) | 2011 - 2013</Title>
           <Logo src={naitLogo} alt="NAIT" />
-          <CompanyDesc> Digital Media and IT Diploma | 3.9 GPA</CompanyDesc>
+          <CompanyDesc>Digital Media and IT Diploma | 3.9 GPA
+            <div> Edmonton, Alberta</div>
+          </CompanyDesc>
         </ExperienceSection>
         )
       }

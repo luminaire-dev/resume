@@ -10,7 +10,7 @@ const CLIWrapper = styled.div`
   padding: 2rem;
   border-radius: 0.75rem;
   border: 1px solid ${colors.green};
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.5);
 `
 
 
