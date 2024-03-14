@@ -128,7 +128,7 @@ const Experiene = () => {
                 </li> 
             </ul>
 
-            <SubHeading>Stripe Integration (2022) </SubHeading>
+            <SubHeading>Fund Loading With Stripe (2022) </SubHeading>
               <ul>
                 <li>
                   Built new integration with Stripe, to allow users to load funds using other debit or credit cards.
