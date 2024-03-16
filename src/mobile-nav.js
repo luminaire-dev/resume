@@ -11,10 +11,7 @@ color: inherit;
 border: none;
 cursor: pointer;
 font-size: 1rem;
-padding: 1rem ;
-  &:hover .caret {
-    visibility: visible; 
-  }
+padding: 0.7rem ;
 `
 
 const MobileNav = ({ setActiveNavItem }) => {
@@ -36,7 +33,7 @@ const handleNavItemClick = (itemName) => {
       community_
       </NavItem>
       <NavItem onClick={() => handleNavItemClick(OtherThingsCmd)}>
-      otherthings_
+      other_
       </NavItem>
      </NavWrapper>
     </div>
