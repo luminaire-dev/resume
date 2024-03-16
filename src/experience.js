@@ -12,8 +12,8 @@ const Title = styled.div`
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   color: ${colors.green};
-  @media only screen and (max-width: 900px) {
-    font-size: 1.2rem;
+  @media only screen and (max-width: 1300px) {
+    font-size: 1.1rem;
   }
 `
 
@@ -24,9 +24,9 @@ const SubHeading = styled.div`
 `
 
 const ExperienceSection = styled.div`
-  height: 30rem;
+  height: 32.5rem;
   overflow-y: scroll;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1300px) {
     height: auto;
     overflow-y: hidden;
   }
@@ -47,7 +47,7 @@ const ExperienceNavItem = styled.button`
   font-size: 1.15rem;
   border: none;
   cursor: pointer;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1300px) {
     display: block;
     margin: 0.2rem 0;
   }

@@ -1,19 +1,22 @@
 
 import styled, {keyframes} from 'styled-components';
 import Experience from './experience.js';
-import { WhoAmiCmd, ExperienceCmd, CommunityCmd, OtherThingsCmd } from './globals.js';
+import { Small, Medium, WhoAmiCmd, ExperienceCmd, CommunityCmd, OtherThingsCmd } from './globals.js';
 import { colors } from './themes.js';
 
 const CLIWrapper = styled.div`
-  width: 61rem;
-  height: 38rem;
+  width: 61.5rem;
+  height: 38.5rem;
   padding: 2rem;
   border-radius: 0.75rem;
   border: 1px solid ${colors.green};
   background-color: rgba(0,0,0,0.5);
-  @media only screen and (max-width: 900px) {
-    width: auto;
+  @media only screen and (max-width: ${Medium}) {
+    width: 45rem;
     height: auto;
+  }
+  @media only screen and (max-width: ${Small}) {
+    width: auto;
   }
 `
 
@@ -72,8 +75,8 @@ const Heading = styled.div`
   font-size: 1.3rem;
   padding: 1rem 0 0.25rem 0;
   letter-spacing: 0.1rem;
-  @media only screen and (max-width: 900px) {
-    font-size: 1.2rem;
+  @media only screen and (max-width: ${Medium}) {
+    font-size: 1.1rem;
   }
 `
 
@@ -81,7 +84,7 @@ const Name = styled.div`
   color: ${colors.green};
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: ${Medium}) {
     font-size: 1.3rem;
   }
 `

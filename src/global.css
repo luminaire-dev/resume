@@ -6,9 +6,9 @@
   font-family: monospace;
   letter-spacing: 0.04rem;
   font-size: 1rem;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1300px) {
     font-size: 0.8rem;
     letter-spacing: 0rem;
-    min-height: 220vh;
+    min-height: 230vh;
   }
 }

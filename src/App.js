@@ -6,7 +6,7 @@ import gitHubIcon from './assets/github.png';
 import emailIcon from './assets/email.png';
 import Nav from './nav.js';
 import MobileNav from './mobile-nav.js';
-import { WhoAmiCmd } from './globals.js';
+import { Medium, WhoAmiCmd } from './globals.js';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: ${Medium}) {
     display: block;
     top: unset;
     left: unset;
@@ -38,7 +38,7 @@ const App = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 900);
+      setIsMobile(window.innerWidth < 1300);
     };
 
     handleResize();
