@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { WhoAmiCmd, ExperienceCmd, CommunityCmd, OtherThingsCmd } from './globals.js';
 
 const NavWrapper = styled.div`
-width: 14rem;
+display: flex;
 `
 const NavItem = styled.button`
 background: none;
@@ -11,21 +11,13 @@ color: inherit;
 border: none;
 cursor: pointer;
 font-size: 1rem;
-padding: 2rem;
+padding: 1rem ;
   &:hover .caret {
     visibility: visible; 
   }
 `
 
-const Caret = styled.div`
-  visibility: hidden; 
-  float: left;
-  padding-right: 0.5rem;
-`
-
-
-const Nav = ({ setActiveNavItem }) => {
-
+const MobileNav = ({ setActiveNavItem }) => {
 
 const handleNavItemClick = (itemName) => {
   setActiveNavItem(itemName);
@@ -35,19 +27,15 @@ const handleNavItemClick = (itemName) => {
     <div>
      <NavWrapper>
       <NavItem onClick={() => handleNavItemClick(WhoAmiCmd)}>
-        <Caret className="caret">></Caret>
         whoami_
         </NavItem>
         <NavItem onClick={() => handleNavItemClick(ExperienceCmd)}>
-      <Caret className="caret">></Caret>
-      experience_
+      exp_
       </NavItem>
       <NavItem onClick={() => handleNavItemClick(CommunityCmd)}>
-      <Caret className="caret">></Caret>
       community_
       </NavItem>
       <NavItem onClick={() => handleNavItemClick(OtherThingsCmd)}>
-      <Caret className="caret">></Caret>
       otherthings_
       </NavItem>
      </NavWrapper>
@@ -55,4 +43,4 @@ const handleNavItemClick = (itemName) => {
   );
 }
 
-export default Nav;
+export default MobileNav;

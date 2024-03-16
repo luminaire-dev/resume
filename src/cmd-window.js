@@ -11,8 +11,11 @@ const CLIWrapper = styled.div`
   border-radius: 0.75rem;
   border: 1px solid ${colors.green};
   background-color: rgba(0,0,0,0.5);
+  @media only screen and (max-width: 900px) {
+    width: auto;
+    height: auto;
+  }
 `
-
 
 const Body = styled.div`    
   padding: 1rem 2rem 0 1.25rem;
@@ -69,12 +72,18 @@ const Heading = styled.div`
   font-size: 1.3rem;
   padding: 1rem 0 0.25rem 0;
   letter-spacing: 0.1rem;
+  @media only screen and (max-width: 900px) {
+    font-size: 1.2rem;
+  }
 `
 
 const Name = styled.div`
   color: ${colors.green};
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
+  @media only screen and (max-width: 900px) {
+    font-size: 1.3rem;
+  }
 `
 
 const Title = styled.div`
@@ -86,11 +95,6 @@ const Caret = styled.div`
   float: left;
   padding-right: 0.5rem;
   font-size: 1.5rem;
-`
-
-const SubHeading = styled.div`
-  font-size: 1rem;
-  padding-top: 1rem;
 `
 
 const CmdWindow = ({ activeNavItem }) => {
@@ -186,10 +190,10 @@ const otherthings = () => {
       <ul>
         <li>I live in the beautiful Okanagan and love to ski, bike, climb and swim.</li>
         <li>I make piano covers of video game music I enjoy. Check out my&nbsp; 
-          <Link href="https://www.youtube.com/channel/UCrOn-19Q386KEzQU8l4tipw" target="_blank" rel="noopener noreferrer" title="Github">youtube channel
+          <Link href="https://www.youtube.com/channel/UCrOn-19Q386KEzQU8l4tipw" target="_blank" rel="noopener noreferrer" title="Youtube">youtube channel
           </Link>
         .</li>
-        <li>I'm that person who organizes the office the soccer team.</li>
+        <li>I'm that person who organizes the office soccer team.</li>
         <li>I could drink Chai lattes everyday until I die.</li>
         <li>If you'd like to know anyting else just ask!</li>
       </ul>
