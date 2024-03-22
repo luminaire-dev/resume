@@ -164,7 +164,7 @@ const whoami = () => {
           </Description>
           <br />
           <Description>
-            In my latest role at KOHO, I designed and developed backend solutions using Golang, across various areas of the business. 
+            In my latest position at KOHO, I designed and developed backend solutions using Golang, across various areas of the business. 
             I took a lead role in mission-critical initiatives, including the development of the Secured Credit Building feature, the 
             enhancement and tech overhaul of fraud detection and KYC (Know Your Customer) in the app, and the modernization of the tech landscape with
             new microservices in lieu of monolithic systems. 
@@ -198,8 +198,8 @@ const otherthings = () => {
         .</li>
         <li>I'm that person who organizes the office soccer team.</li>
         <li>I could drink Chai lattes everyday until I die.</li>
-        <li>If you'd like to know anyting else just ask!</li>
       </ul>
+      If you'd like to know anyting else just ask!
     </Body>
   );
 }

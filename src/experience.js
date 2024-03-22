@@ -89,7 +89,7 @@ const Experiene = () => {
           <SubHeading>Secured Credit Building (Jan 2023 - Aug 2023) </SubHeading>
               <ul>
                 <li>
-                   Brought the Secured Credit Building feature from half-baked to release ready.
+                  Advanced the Secured Credit Building feature from half-baked to release ready.
                 </li>
                 <li>
                   Developed a new microservice using Golang and DynamoDB to manage 
@@ -107,7 +107,7 @@ const Experiene = () => {
                   using LaunchDarkly control/variant groups, and measuring user adoption rates in Metabase.
                 </li>
                 <li>
-                  Wrote unit and integration test.
+                  Wrote unit and integration tests.
                 </li>
                 <li>
                   Provided on-call support for the feature and improved operational support processes.
@@ -132,7 +132,7 @@ const Experiene = () => {
                   Provided on-call support for KYC and Fraud detection features and contributed to operational support documentation.
                 </li>
                 <li>
-                  Wrote unit and integration test.
+                  Wrote unit and integration tests.
                 </li>
                 <li>
                   Worked closely with other developers, frequently pairing, mentoring, and performing code reviews.
@@ -148,7 +148,7 @@ const Experiene = () => {
                   Wrote documentation for the workflows.
                 </li>
                 <li>
-                  Wrote unit and integration test.
+                  Wrote unit and integration tests.
                 </li>
             </ul>
 
@@ -165,7 +165,7 @@ const Experiene = () => {
                   Wrote documentation for the new localization service. 
                 </li>
                 <li>
-                  Wrote unit and integration test.
+                  Wrote unit and integration tests.
                 </li>
             </ul>
         </ExperienceSection>
@@ -200,13 +200,13 @@ const Experiene = () => {
               <li>Implemented the e-transfer feature's front-end components and backend endpoints integrating with Interac</li>
               <li>Developed RESTful APIs using Express and microservices architecture.</li>
               <li>Built unit tests in Jest and React Testing Library.</li>
-              <li>Constructed mobile end-to-end tests using Selenium</li>
+              <li>Constructed mobile end-to-end tests using Selenium.</li>
               <li>Provided on-call support and particapted in outage resolution and deployments.</li>
             </ul>
 
             <SubHeading>Retail Banking Mobile (2016 - 2017) </SubHeading>
             <ul>
-              <li>Developed a new ATB mobile banking app using HTML5 and Cordova</li>
+              <li>Developed a new ATB mobile banking app using HTML5 and Cordova.</li>
               <li>Implemented account summary and bill payment UIs using HTML5, CSS, Bootstrap and SAP Mobile Platform.</li>
               <li>Built backend endpoints using Soap and XML.</li>
               <li>Used Jenkins to automate builds and deployments.</li>
@@ -236,7 +236,7 @@ const Experiene = () => {
             <div> Edmonton, Alberta</div>
           </CompanyDesc>
 
-          <div>Capstone: Modernized Alberta health services’s (AHS) legacy back-end to n-tier application.</div>
+          <div>Capstone: Modernized Alberta health services’ (AHS) legacy back-end to n-tier application.</div>
         </ExperienceSection>
         )
       }
