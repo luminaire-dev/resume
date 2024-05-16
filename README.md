@@ -21,7 +21,6 @@ CI/CD, Feature Toggling, Microservice Architecture, Accessibility, Event-Driven 
 KOHO is a Canadian fintech company that offers a Visa Card + mobile banking app with modern features like credit building and helpful budgeting tools.
 
 ##### Secured Credit Building (Jan 2023 - Aug 2023) 
-* Advanced the Secured Credit Building feature from half-baked to release ready.
 * Developed a new microservice using Golang and DynamoDB to manage collection of fee and payments from the users.
 * Designed and developed REST endpoints using Golang and PostgreSQL to manage user's subscription and fetch user's credit score from Equifax.
 * Introduced event-driven patterns with RabbitMQ to replace legacy code orchestrating HTTPS calls to other services.

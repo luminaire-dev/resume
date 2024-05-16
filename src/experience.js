@@ -89,9 +89,6 @@ const Experiene = () => {
           <SubHeading>Secured Credit Building (Jan 2023 - Aug 2023) </SubHeading>
               <ul>
                 <li>
-                  Advanced the Secured Credit Building feature from half-baked to release ready.
-                </li>
-                <li>
                   Developed a new microservice using Golang and DynamoDB to manage 
                   collection of fee and payments from the users.
                 </li>
