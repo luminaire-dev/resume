@@ -5,6 +5,7 @@ export const CommunityCmd = 'community';
 export const OtherThingsCmd = 'otherthings';
 
 //Experience Sub Nav item names 
+export const Synctera = 'synctera';
 export const Koho = 'koho';
 export const Atb = 'atb';
 export const Education = 'education';

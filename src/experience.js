@@ -1,8 +1,9 @@
 
 import styled, {keyframes} from 'styled-components';
 import { useState } from 'react';
-import { Koho, Atb, Education } from './globals.js';
+import { Koho, Atb, Education, Synctera } from './globals.js';
 import { colors } from './themes.js';
+import syncteraLogo from './assets/syncteraLogo.png';
 import kohoLogo from './assets/koho.png';
 import atbLogo from './assets/atb.png';
 import naitLogo from './assets/nait.svg';
@@ -39,17 +40,16 @@ const CompanyDesc = styled.p`
   }
 `
 
-const ExperienceNavItem = styled.button`
+const ExperienceNavItem = styled.a`
   background-color: ${(props) => props.selected ? colors.green : 'transparent'};
   color: ${(props) => props.selected ? 'black' : colors.green};
   margin: 0 5rem 1rem 0rem;
-  font: inherit;
   font-size: 1.15rem;
-  border: none;
   cursor: pointer;
+  text-decoration: underline;
   @media only screen and (max-width: 1300px) {
     display: block;
-    margin: 0.2rem 0;
+    margin: 0.25rem 0;
   }
 `
 
@@ -61,13 +61,20 @@ const Logo = styled.img`
 
 
 const KohoLogo = styled.img`
-  width: 3.25rem;
+  width: 3.35rem;
   margin: 0.9rem 1rem 0 0;
   float: left;
 `
 
+const SyncteraLogo = styled.img`
+  width: 3.85rem;
+  margin: 0.75rem 0.8rem 0 0  ;
+  float: left;
+`
+
+
 const Experiene = () => {
-  const [activeNavItem, setActiveNavItem] = useState('koho');
+  const [activeNavItem, setActiveNavItem] = useState(Synctera);
 
 
   const handleNavItemClick = (name) => {
@@ -75,9 +82,31 @@ const Experiene = () => {
   };
   return (
     <div>
+        <ExperienceNavItem selected={activeNavItem === Synctera} onClick={() => handleNavItemClick(Synctera)}>synctera.txt</ExperienceNavItem>
         <ExperienceNavItem selected={activeNavItem === Koho} onClick={() => handleNavItemClick(Koho)}>koho.txt</ExperienceNavItem>
-        <ExperienceNavItem selected={activeNavItem === Atb} onClick={() => handleNavItemClick(Atb)}>atb-financial.txt</ExperienceNavItem>
+        <ExperienceNavItem selected={activeNavItem === Atb} onClick={() => handleNavItemClick(Atb)}>atb_financial.txt</ExperienceNavItem>
         <ExperienceNavItem selected={activeNavItem === Education} onClick={() => handleNavItemClick(Education)}>education.txt</ExperienceNavItem>
+        {
+        activeNavItem === Synctera && (
+        <ExperienceSection>
+         <Title>Sr. Backend Engineer - Synctera | 2024 - present</Title>         
+
+         <SyncteraLogo src={syncteraLogo} alt="KOHO" />
+          <CompanyDesc>Synctera is...Synctera is...Synctera is...Synctera is...Synctera is...Synctera is...</CompanyDesc>
+          <SubHeading>Secured Credit Building (Jan 2023 - Aug 2023) </SubHeading>
+             
+
+            <SubHeading>KYC and Fraud Detection (2022 - 2023) </SubHeading>
+          
+
+            <SubHeading>Fund Loading With Stripe (2022) </SubHeading>
+             
+
+            <SubHeading>Localization of backend content (2021 - 2022) </SubHeading>
+              
+        </ExperienceSection>
+        )
+      }
       {
         activeNavItem === Koho && (
         <ExperienceSection>

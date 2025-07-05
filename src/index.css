@@ -1,5 +1,7 @@
 body {
-  background-color:rgb(50, 69, 70);
+  background-image: url('assets/nl.jpeg');
+  background-repeat: no-repeat;
+  background-size: 2000px 2000px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
