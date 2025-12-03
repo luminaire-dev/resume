@@ -7,15 +7,37 @@ Markdown version:
 
 Hi there, I'm Leila. 👋
 
-I create simple, elegant solutions for complex problems. With over 10 years of experience, I bring a wealth of knowledge and skills gained through pivotal roles in two leading fintech companies—KOHO, ATB Financial.
+I’m driven by the challenge of solving meaningful problems through code and technology. With over a decade of experience at three major fintech and banking companies (Synctera, KOHO, and ATB Financial), I've developed deep expertise building and scaling reliable solutions in the financial space.
 
-In my latest position at KOHO, I designed and developed backend solutions using Golang, across various areas of the business. I took a lead role in mission-critical initiatives, including the development of the Secured Credit Building feature, the enhancement and tech overhaul of fraud detection and KYC (Know Your Customer) in the app, and the modernization of the tech landscape with new microservices in lieu of monolithic systems.
+In my latest position at Synctera, I designed and developed backend systems using Golang across the risk, compliance, and lending domains. I worked on various core products including Customer Risk Rating (CRR), Credit Dispute Processing, KYC/KYB and Synctera's case management systems.
 
 ## Tech Stack 🥞
-Golang, JavaScript(ES6), React, Redux, Bable, Webpack, Node, Express, PostgreSQL, Docker, GitHub, Git, DataDog, AWS, Terraform, Cordova/Ionic, Jenkins, RabbitMQ, GitLab, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST, Python, Java, C#.
+Golang, PostgreSQL, JavaScript(ES6) (React, Redux, Bable, Webpack, Node, Express), Java, C#, Docker, Git, GitHub, Gitlab, GCP, Terraform, Grafana, DataDog, AWS, RabbitMQ, Cordova/Ionic, Jenkins, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST.
 ## Dev Practices 👩🏻‍💻
-CI/CD, Feature Toggling, Microservice Architecture, Accessibility, Event-Driven Architecture(Pub/Sub), Unit Testing, Integration Testing, Test Automation, Test Driven Development, Observability, Paired Programming, Code Reviews, Agile, Scrum, Kanban, Documentation, Request for Comments(RFC), Mentoring & Feedback.   
+CI/CD, Feature Toggling, Event-Driven Architecture(Pub/Sub), Outbox Pattern, Integration Testing, Unit Testing, Test Automation, Test Driven Development, Database Normalization, Indexing, Locking, Idempotency, Paired Programming, Code Reviews, 
+Observability, Agile, Scrum, Kanban, Documentation, Request for Comments(RFC). 
 ## Experience 👔
+
+### Sr. Software Engineer - Synctera | 2024 - present
+Synctera is a Banking-as-a-Service (BaaS) platform that connects fintechs with banks, offering APIs to launch and scale financial products with built-in compliance monitoring, KYC, and fraud detection.
+
+#####  Credit Dispute Workflow Automation (May 2025 - Aug 2023)
+
+* Designed and implemented an automated credit dispute workflow using Golang, PostgreSQL, and GCP Pub/Sub, replacing a previously manual process.
+* Built functionality to ingest credit dispute batch files from a B2B credit partner, over SFTP, using a Google Cloud Storage (GCS) event listener.
+* Built logic to parse and process credit dispute data from batch files, storing credit dispute resources within our system.
+* Automated event-driven case creation within the Synctera platform for each credit dispute resources.
+* Wrotes e2e and integration tests, and created alerting reports in Metabase to monitor system health post-launch and prevent regressions.
+* Worked closely with frontend developers to ensure the backend effectively serves frontend vision.
+
+#####  Customer Risk Rating (CRR) Enhancements (Feb 2025 - May 2023) 
+
+* Developed CRUD-style, Restful, API that enable banks to configure their own risk score calculation settings and fine-tune parameter weights and thresholds to suit their specific risk program and strategy.
+* Refactored legacy CRR code and introduced parallel processing of risk score calculations, using Go worker pools and goroutines, improving efficiency and performance.
+* Implemented background job orchestration using an in-house async, task processing service, automating the recalculation of all risk scores under a tenants upon config change.
+* Wrote end-to-end and integration test to prevent regressions.
+* Collaborated closely with frontend engineers to ensure seamless integration across BE services and UI.
+      
 
 ### Sr. Backend Engineer - KOHO Financial | 2021 - 2023
 KOHO is a Canadian fintech company that offers a Visa Card + mobile banking app with modern features like credit building and helpful budgeting tools.
