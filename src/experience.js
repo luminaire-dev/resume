@@ -18,6 +18,11 @@ const Title = styled.div`
   }
 `
 
+const Link = styled.a`
+  color: ${colors.green};
+`
+
+
 const SubHeading = styled.div`
   padding-top: 0.5rem;
   font-size 1rem;
@@ -25,12 +30,7 @@ const SubHeading = styled.div`
 `
 
 const ExperienceSection = styled.div`
-  height: 32.5rem;
-  overflow-y: scroll;
-  @media only screen and (max-width: 1300px) {
-    height: auto;
-    overflow-y: hidden;
-  }
+
 `
 
 const CompanyDesc = styled.p`
@@ -44,8 +44,12 @@ const ExperienceNavItem = styled.a`
   background-color: ${(props) => props.selected ? colors.green : 'transparent'};
   color: ${(props) => props.selected ? 'black' : colors.green};
   margin: 0 5rem 1rem 0rem;
+  padding: 0.20rem;
   font-size: 1.15rem;
   cursor: pointer;
+   &:hover {
+    color: ${colors.darkGreen};
+  }
   text-decoration: underline;
   @media only screen and (max-width: 1300px) {
     display: block;
@@ -67,8 +71,8 @@ const KohoLogo = styled.img`
 `
 
 const SyncteraLogo = styled.img`
-  width: 3.85rem;
-  margin: 0.75rem 0.8rem 0 0  ;
+  width: 3.75rem;
+  margin: 1.25rem 0.8rem 0 0  ;
   float: left;
 `
 
@@ -86,24 +90,88 @@ const Experiene = () => {
         <ExperienceNavItem selected={activeNavItem === Koho} onClick={() => handleNavItemClick(Koho)}>koho.txt</ExperienceNavItem>
         <ExperienceNavItem selected={activeNavItem === Atb} onClick={() => handleNavItemClick(Atb)}>atb_financial.txt</ExperienceNavItem>
         <ExperienceNavItem selected={activeNavItem === Education} onClick={() => handleNavItemClick(Education)}>education.txt</ExperienceNavItem>
-        {
+      {
         activeNavItem === Synctera && (
         <ExperienceSection>
-         <Title>Sr. Backend Engineer - Synctera | 2024 - present</Title>         
+         <Title>Sr. Software Engineer - Synctera | 2024 - present</Title>         
 
-         <SyncteraLogo src={syncteraLogo} alt="KOHO" />
-          <CompanyDesc>Synctera is...Synctera is...Synctera is...Synctera is...Synctera is...Synctera is...</CompanyDesc>
-          <SubHeading>Secured Credit Building (Jan 2023 - Aug 2023) </SubHeading>
+         <SyncteraLogo src={syncteraLogo} alt="Synctera" />
+          <CompanyDesc>
+          Synctera is a Banking-as-a-Service (BaaS) platform that connects fintechs with banks,
+          offering APIs to launch and scale financial products with built-in compliance monitoring, KYC, and fraud detection.
+
+          </CompanyDesc>
+          <SubHeading>Credit Dispute Workflow Automation (May 2025 - Aug 2023) </SubHeading>
+          <ul>
+                <li>
+                Designed and implemented an automated credit dispute workflow using Golang, PostgreSQL, and GCP Pub/Sub, replacing a previously manual process.
+                </li>
+                <li>
+                  Built functionality to ingest dispute batch files from a B2B credit partner, 
+                  over SFTP, using a Google Cloud Storage (GCS) event listener.
+                </li>
+                <li>
+                  Built logic to parse and process credit dispute data from batch files, storing credit dispute resources within our system.
+                </li>
+                <li>
+                  Automated event-driven case creation within the Synctera platform for each credit dispute resources, 
+                  improving resolution speed, traceability, and collaboration between Synctera and credit partners.
+                </li>
+                <li>
+                  Wrotes e2e and integration tests, and created alerting reports in Metabase to monitor system health post-launch.
+                </li>
+                <li>
+                  Worked closely with frontend developers to ensure the backend effectively serves frontend needs and vision.
+                </li>
+            </ul>
              
 
-            <SubHeading>KYC and Fraud Detection (2022 - 2023) </SubHeading>
+            <SubHeading>Customer Risk Rating (CRR) Enhancements (Feb 2025 - May 2023) </SubHeading>
+            <ul>
+                <li>
+                Designed and developed APIs that enable banks to configure their own risk score calculation settings (previously managed by
+                 Synctera) allowing them to fine-tune parameter weights and thresholds to suit their specific 
+                 risk program and strategy.
+                </li>
+                <li>
+                 Refactored legacy CRR code and introduced parallel processing of risk score calculations 
+                 using Go worker pools, improving system performance.
+                </li>
+                <li>
+                Implemented background job orchestration using our in-house "Taskmaster" (async, task processing) service, automating the recalculation of all risk scores
+                under a tenants upon config change.
+                </li>
+                <li>
+                Wrote end-to-end and integration test coverage to prevent 
+                regressions and improve reliability.
+                </li>
+                <li>
+                Collaborated closely with frontend engineers to ensure seamless integration across services and UI.
+                </li>
+            </ul>
           
+            <SubHeading> External Account Improvements (July 2024 - Sept 2024)</SubHeading>
+            <ul>
+                <li>
+                Worked on integrations with Plaid and other vendors which enable account ownership 
+                verification, and linking external accounts (ledgered by other financial institutions) to the Synctera platform.
+                </li>
+                <li>
+                Enhanced legacy code robustness and error handling to support various Plaid responses and error types.
+                </li>
+                <li>
+                  Refactored the external account APIs to align with our standard multi-tenant pattern,
+                  resolving inconsistencies in multi-tenant identity and permission handling.
+                </li>
+            </ul>
 
-            <SubHeading>Fund Loading With Stripe (2022) </SubHeading>
-             
-
-            <SubHeading>Localization of backend content (2021 - 2022) </SubHeading>
-              
+            <SubHeading>HawkAI Integration Enhancements (July 2024)</SubHeading>
+            <ul>
+                <li>
+                Enhanced our webhook integration with HawkAI by configuring pub/sub in the service layer, enabling asynchronous processing 
+                using an outbox pattern to ensure message reliability.
+                </li>
+            </ul>
         </ExperienceSection>
         )
       }

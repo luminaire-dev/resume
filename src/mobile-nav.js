@@ -11,7 +11,7 @@ color: inherit;
 border: none;
 cursor: pointer;
 font-size: 1rem;
-padding: 0.7rem ;
+padding: 1rem ;
 `
 
 const MobileNav = ({ setActiveNavItem }) => {

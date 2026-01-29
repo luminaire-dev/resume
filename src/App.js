@@ -4,28 +4,16 @@ import CmdWindow from './cmd-window.js';
 import linkedinIcon from './assets/linkedin.png';
 import gitHubIcon from './assets/github.png';
 import emailIcon from './assets/email.png';
-import Nav from './nav.js';
 import MobileNav from './mobile-nav.js';
 import { Medium, WhoAmiCmd } from './globals.js';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  @media only screen and (max-width: ${Medium}) {
-    display: block;
-    top: unset;
-    left: unset;
-    transform: none;
-  }
 `
 
 const IconLinks = styled.img`
   width: 2.5rem;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
 
   &:hover {
     filter: sepia(1) saturate(6000%) hue-rotate(290deg) brightness(106%) contrast(124%);
@@ -53,13 +41,8 @@ const App = () => {
   return (
     <div className="Global">
       <Wrapper>
-      {isMobile && (
       <MobileNav activeNavItem={activeNavItem} setActiveNavItem={setActiveNavItem} />
-      )}
       <CmdWindow activeNavItem={activeNavItem} />
-      {!isMobile && (
-      <Nav activeNavItem={activeNavItem} setActiveNavItem={setActiveNavItem} /> 
-      )}
         
         <div>
           <a href="https://github.com/luminaire-dev" target="_blank" rel="noopener noreferrer" title="Github">

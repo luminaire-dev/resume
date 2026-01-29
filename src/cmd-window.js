@@ -6,7 +6,7 @@ import { colors } from './themes.js';
 
 const CLIWrapper = styled.div`
   width: 61.5rem;
-  height: 38.5rem;
+  min-height: 35rem;
   padding: 2rem;
   border-radius: 0.75rem;
   border: 1px solid ${colors.green};
@@ -35,6 +35,10 @@ const Body = styled.div`
 
 const Link = styled.a`
   color: ${colors.green};
+  cursor: pointer;
+   &:hover {
+    color: ${colors.darkGreen};
+  }
 `
 
 const Description = styled.div`
@@ -157,29 +161,32 @@ const whoami = () => {
           <Name>Leila Elkhalidy</Name>
           <Title>Sr. Software Engineer - Kelowna, BC </Title>
           <Description>
-             I create simple, elegant solutions for complex problems. With over 10 years of experience, 
-             I bring a wealth of knowledge and skills gained through pivotal roles in two leading fintech companies&mdash;
-              <Link href="https://www.koho.ca/" target="_blank" rel="noopener noreferrer">KOHO</Link>
-            , <Link href="https://www.atb.com/personal/" target="_blank" rel="noopener noreferrer">ATB Financial</Link>. 
+            I’m driven by the challenge of solving meaningful problems through code and technology. With over a decade of experience at three major
+            fintech and banking companies (
+              <Link href="https://synctera.com/" target="_blank" rel="noopener noreferrer">Synctera</Link>
+            , <Link href="https://www.koho.ca/" target="_blank" rel="noopener noreferrer">KOHO</Link>
+            , and <Link href="https://www.atb.com/personal/" target="_blank" rel="noopener noreferrer">ATB Financial</Link>
+            ), 
+            I've developed deep expertise building and scaling reliable solutions in the financial space.
           </Description>
           <br />
           <Description>
-            In my latest position at KOHO, I designed and developed backend solutions using Golang, across various areas of the business. 
-            I took a lead role in mission-critical initiatives, including the development of the Secured Credit Building feature, the 
-            enhancement and tech overhaul of fraud detection and KYC (Know Your Customer) in the app, and the modernization of the tech landscape with
-            new microservices in lieu of monolithic systems. 
+          In my latest position at Synctera, I designed and developed backend systems using Golang across the risk, compliance, 
+          and lending domains. I worked on various core products including Customer Risk Rating (CRR), 
+          credit dispute processing, KYC/KYB and Synctera's case management systems.
           </Description>
 
           <Heading>Tech Stack</Heading>
           <Description>
-            Golang, JavaScript(ES6), React, Redux, Bable, Webpack, Node, Express, PostgreSQL, Docker, GitHub, Git, DataDog, AWS,
-            Terraform, Cordova/Ionic, Jenkins, RabbitMQ, GitLab, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST,  Python, Java, C#.
+          Golang, PostgreSQL, JavaScript(ES6) (React, Redux, Bable, Webpack, Node, Express), Java, C#, Docker, Git, GitHub, Gitlab, GCP, 
+          Terraform, Grafana, DataDog, AWS, RabbitMQ, Cordova/Ionic, Jenkins, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST.
           </Description>
 
           <Heading>Dev Practices</Heading>
           <Description>
-            CI/CD, Feature Toggling, Microservice Architecture, Accessibility, Event-Driven Architecture(Pub/Sub), Unit Testing, Integration Testing, Test Automation, 
-            Test Driven Development, Observability, Paired Programming, Code Reviews, Agile, Scrum, Kanban, Documentation, Request for Comments(RFC), Mentoring & Feedback.
+          CI/CD, Feature Toggling, Event-Driven Architecture(Pub/Sub), Outbox Pattern, Integration Testing, Unit Testing, 
+          Test Automation, Test Driven Development, Database Normalization, Indexing, Locking, Idempotency, Paired Programming,
+          Code Reviews, Observability, Agile, Scrum, Kanban, Documentation, Request for Comments(RFC). 
           </Description>
         </Body>
   );
@@ -191,13 +198,11 @@ const otherthings = () => {
     <Body>
       Just a few other things about me:
       <ul>
-        <li>I live in the beautiful Okanagan and love to ski, bike, climb and swim.</li>
-        <li>I make piano covers of video game music I enjoy. Check out my&nbsp; 
-          <Link href="https://www.youtube.com/channel/UCrOn-19Q386KEzQU8l4tipw" target="_blank" rel="noopener noreferrer" title="Youtube">youtube channel
+        <li>I live in beautiful Kelowna, BC, and love playing ultimate frisbee, biking, skiing, and swimming.</li>
+        <li>Other than software, music is a big passion of mine. Feel free to check out my&nbsp; 
+          <Link href="https://www.youtube.com/channel/UCrOn-19Q386KEzQU8l4tipw" target="_blank" rel="noopener noreferrer" title="Youtube">Youtube channel
           </Link>
-        .</li>
-        <li>I'm that person who organizes the office soccer team.</li>
-        <li>I could drink Chai lattes everyday until I die.</li>
+        !</li>
       </ul>
       If you'd like to know anyting else just ask!
     </Body>
@@ -233,6 +238,10 @@ const community = () => {
 
             <Heading>HackEDbeta at Startup Edmonton, 2017</Heading>
             <div>Volunteered as a Mentor at this beginner-friendly hackathon.</div>
+
+            <Heading>Kelowna Ultimate Spitit and Communication director, 2024 - present</Heading>
+            <div>Promote sportsmanship and community engagement by resolving on-field disputes, 
+            organizing ultimate frisbee events, and managing public communications.</div>
       </Body>
   );
 }
