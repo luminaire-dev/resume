@@ -22,7 +22,7 @@ Event-Driven Architecture(Pub/Sub), CI/CD, Test Driven Development, Agentic AI, 
 ### Sr. Software Engineer - Synctera | 2024 - present
 Synctera is a Banking-as-a-Service (BaaS) platform that connects fintechs with banks, offering APIs to launch and scale financial products with built-in compliance monitoring, KYC, and fraud detection.
 
-#####  Credit Dispute Workflow Automation (May 2025 - Aug 2023)
+#####  Credit Dispute Workflow Automation (May 2025 - Aug 2025)
 
 * Designed and implemented an automated credit dispute workflow using Golang, PostgreSQL, and GCP Pub/Sub, replacing a previously manual process.
 * Built functionality to ingest credit dispute batch files from a B2B credit partner, over SFTP, using a Google Cloud Storage (GCS) event listener.
@@ -31,7 +31,7 @@ Synctera is a Banking-as-a-Service (BaaS) platform that connects fintechs with b
 * Wrotes e2e and integration tests, and created alerting reports in Metabase to monitor system health post-launch and prevent regressions.
 * Worked closely with frontend developers to ensure the backend effectively served the frontend goals.
 
-#####  Customer Risk Rating (CRR) Enhancements (Feb 2025 - May 2023) 
+#####  Customer Risk Rating (CRR) Enhancements (Feb 2025 - May 2025) 
 
 * Developed CRUD-style, Restful, API that enable banks to configure their own risk score calculation settings and fine-tune parameter weights and thresholds to suit their specific risk program and strategy.
 * Refactored legacy CRR code and introduced parallel processing of risk score calculations, using Go worker pools and goroutines, improving efficiency and performance.
