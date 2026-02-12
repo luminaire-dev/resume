@@ -171,22 +171,24 @@ const whoami = () => {
           </Description>
           <br />
           <Description>
-          In my latest position at Synctera, I designed and developed backend systems using Golang across the risk, compliance, 
-          and lending domains. I worked on various core products including Customer Risk Rating (CRR), 
-          credit dispute processing, KYC/KYB and Synctera's case management systems.
+          In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains.
+           I worked on various core products including Customer Risk Rating (CRR), Credit Dispute Processing, KYC/KYB, 
+           Revolving Credit and Credit Card features, and Synctera's case management systems.
           </Description>
 
           <Heading>Tech Stack</Heading>
           <Description>
-          Golang, PostgreSQL, JavaScript(ES6) (React, Redux, Bable, Webpack, Node, Express), Java, C#, Docker, Git, GitHub, Gitlab, GCP, 
-          Terraform, Grafana, DataDog, AWS, RabbitMQ, Cordova/Ionic, Jenkins, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST.
+          Golang, PostgreSQL, Docker, Git, Gitlab, GitHub, Claude Code, GCP, AWS, Terraform, Grafana, RabbitMQ, DataDog, 
+          JavaScript(ES6) (React, Redux, Bable, Webpack, Node, Express), Java, C#, Cordova/Ionic, Jenkins, Bitbucket, Bitrise,
+           Auth0, JSON, XML, CSS, REST.
           </Description>
 
           <Heading>Dev Practices</Heading>
           <Description>
-          CI/CD, Feature Toggling, Event-Driven Architecture(Pub/Sub), Outbox Pattern, Integration Testing, Unit Testing, 
-          Test Automation, Test Driven Development, Database Normalization, Indexing, Locking, Idempotency, Paired Programming,
-          Code Reviews, Observability, Agile, Scrum, Kanban, Documentation, Request for Comments(RFC). 
+          Event-Driven Architecture(Pub/Sub), CI/CD, Test Driven Development, Agentic AI, Context Engineering, 
+          Transactional Outbox Pattern, Integration Testing, Unit Testing, Test Automation, Feature Toggling, 
+          Database Indexing, Database Locking (Concurrency Control), Idempotency, Paired Programming, Code Reviews, 
+          Observability, Agile, Scrum, Kanban, Documentation, Request for Comments(RFC). 
           </Description>
         </Body>
   );
@@ -198,7 +200,7 @@ const otherthings = () => {
     <Body>
       Just a few other things about me:
       <ul>
-        <li>I live in beautiful Kelowna, BC, and love playing ultimate frisbee, biking, skiing, and swimming.</li>
+        <li>Originally from Edmonton AB, I now live in beautiful Kelowna, BC, and love playing ultimate frisbee, biking, skiing, and swimming.</li>
         <li>Other than software, music is a big passion of mine. Feel free to check out my&nbsp; 
           <Link href="https://www.youtube.com/channel/UCrOn-19Q386KEzQU8l4tipw" target="_blank" rel="noopener noreferrer" title="Youtube">Youtube channel
           </Link>
