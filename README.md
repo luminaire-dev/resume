@@ -9,13 +9,14 @@ Hi there, I'm Leila. 👋
 
 I’m driven by the challenge of solving meaningful problems through code and technology. With over a decade of experience at three major fintech and banking companies (Synctera, KOHO, and ATB Financial), I've developed deep expertise building and scaling reliable solutions in the financial space.
 
-In my latest position at Synctera, I designed and developed backend systems using Golang across the risk, compliance, and lending domains. I worked on various core products including Customer Risk Rating (CRR), Credit Dispute Processing, KYC/KYB and Synctera's case management systems.
+In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains.  I worked on various core products including Customer Risk Rating (CRR), Credit Dispute Processing, KYC/KYB, Revolving Credit and Credit Card features, and Synctera's case management systems.
 
 ## Tech Stack 🥞
-Golang, PostgreSQL, JavaScript(ES6) (React, Redux, Bable, Webpack, Node, Express), Java, C#, Docker, Git, GitHub, Gitlab, GCP, Terraform, Grafana, DataDog, AWS, RabbitMQ, Cordova/Ionic, Jenkins, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST.
+Golang, PostgreSQL, Docker, Git, Gitlab, GitHub, Claude Code, GCP, AWS, Terraform, Grafana, RabbitMQ, DataDog, JavaScript(ES6) (React, Redux, Bable, Webpack, Node, Express), Java, C#, Cordova/Ionic, Jenkins, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST.
+
 ## Dev Practices 👩🏻‍💻
-CI/CD, Feature Toggling, Event-Driven Architecture(Pub/Sub), Outbox Pattern, Integration Testing, Unit Testing, Test Automation, Test Driven Development, Database Normalization, Indexing, Locking, Idempotency, Paired Programming, Code Reviews, 
-Observability, Agile, Scrum, Kanban, Documentation, Request for Comments(RFC). 
+Event-Driven Architecture(Pub/Sub), CI/CD, Test Driven Development, Agentic AI, Context Engineering, Transactional Outbox Pattern, Integration Testing, Unit Testing, Test Automation, Feature Toggling, Database Indexing, Database Locking (Concurrency Control), Idempotency, Paired Programming, Code Reviews, Observability, Agile, Scrum, Kanban, Documentation, Request for Comments(RFC). 
+
 ## Experience 👔
 
 ### Sr. Software Engineer - Synctera | 2024 - present
@@ -28,7 +29,7 @@ Synctera is a Banking-as-a-Service (BaaS) platform that connects fintechs with b
 * Built logic to parse and process credit dispute data from batch files, storing credit dispute resources within our system.
 * Automated event-driven case creation within the Synctera platform for each credit dispute resources.
 * Wrotes e2e and integration tests, and created alerting reports in Metabase to monitor system health post-launch and prevent regressions.
-* Worked closely with frontend developers to ensure the backend effectively serves frontend vision.
+* Worked closely with frontend developers to ensure the backend effectively served the frontend goals.
 
 #####  Customer Risk Rating (CRR) Enhancements (Feb 2025 - May 2023) 
 
