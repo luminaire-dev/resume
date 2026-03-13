@@ -7,12 +7,14 @@ Markdown version:
 
 Hi there, I'm Leila. 👋
 
-I’m driven by the challenge of solving meaningful problems through code and technology. With over a decade of experience at three major fintech and banking companies (Synctera, KOHO, and ATB Financial), I've developed deep expertise building and scaling reliable solutions in the financial space.
+I’m a **builder** driven by the challenge of solving **meaningful problems** through **code and technology**. With over a decade of experience at three fintech and banking companies (Synctera, KOHO, and ATB Financial), I've developed deep expertise building and scaling reliable solutions in the financial space, adapting to technological advances including AI. Most recently, I’ve been working alongside LLMs, building AI infrastructure and context-engineering modules.
 
-In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains.  I worked on various core products including Customer Risk Rating (CRR), Credit Dispute Processing, KYC/KYB, Revolving Credit and Credit Card features, and Synctera's case management systems.
+In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains. I worked on various core products including Customer Risk Rating (CRR), Line of Credit Issuance, Credit Dispute Processing, KYC/KYB, and Synctera's case management platform.
+
+I have worked on both large and small teams and explored a wide range of tools and development styles. My approach prioritizes thoughtful architecture and design, pragmatic optimization and reusability, and iterative development.
 
 ## Tech Stack 🥞
-Golang, PostgreSQL, Docker, Git, Gitlab, GitHub, Claude Code, GCP, AWS, Terraform, Grafana, RabbitMQ, DataDog, JavaScript(ES6) (React, Redux, Bable, Webpack, Node, Express), Java, C#, Cordova/Ionic, Jenkins, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST.
+Golang, PostgreSQL, Docker, Git, Gitlab, GitHub, Claude Code, Conductor, GCP, AWS, Terraform, Grafana, RabbitMQ, DataDog, JavaScript(ES6) (React, Redux, Bable, Webpack, Node, Express), Java, C#, Cordova/Ionic, Jenkins, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST.
 
 ## Dev Practices 👩🏻‍💻
 Event-Driven Architecture(Pub/Sub), CI/CD, Test Driven Development, Agentic AI, Context Engineering, Transactional Outbox Pattern, Integration Testing, Unit Testing, Test Automation, Feature Toggling, Database Indexing, Database Locking (Concurrency Control), Idempotency, Paired Programming, Code Reviews, Observability, Agile, Scrum, Kanban, Documentation, Request for Comments(RFC). 

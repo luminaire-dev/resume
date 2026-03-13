@@ -161,24 +161,28 @@ const whoami = () => {
           <Name>Leila Elkhalidy</Name>
           <Title>Sr. Software Engineer - Kelowna, BC </Title>
           <Description>
-            I’m driven by the challenge of solving meaningful problems through code and technology. With over a decade of experience at three major
-            fintech and banking companies (
+          I’m a <b>builder</b> driven by the challenge of solving <b>meaningful problems</b> through <b>code and technology</b>. With over a decade of experience at three fintech and banking companies  (
               <Link href="https://synctera.com/" target="_blank" rel="noopener noreferrer">Synctera</Link>
             , <Link href="https://www.koho.ca/" target="_blank" rel="noopener noreferrer">KOHO</Link>
             , and <Link href="https://www.atb.com/personal/" target="_blank" rel="noopener noreferrer">ATB Financial</Link>
             ), 
-            I've developed deep expertise building and scaling reliable solutions in the financial space.
+            I've developed deep expertise building and scaling reliable solutions in the financial space, adapting to technological advances including AI. Most recently, I’ve been working alongside LLMs, building AI infrastructure and context-engineering modules.
           </Description>
           <br />
           <Description>
-          In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains.
-           I worked on various core products including Customer Risk Rating (CRR), Credit Dispute Processing, KYC/KYB, 
-           Revolving Credit and Credit Card features, and Synctera's case management systems.
+           In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains. 
+            I worked on various core products including Customer Risk Rating (CRR), Line of Credit Issuance, Credit Dispute Processing, KYC/KYB, 
+            and Synctera's case management platform.
           </Description>
+          <br />
+          <Description>I have worked on both large and small teams and explored a wide 
+            range of tools and development styles. My approach prioritizes thoughtful 
+            architecture and design, pragmatic optimization and reusability, and iterative development.
+            </Description>
 
           <Heading>Tech Stack</Heading>
           <Description>
-          Golang, PostgreSQL, Docker, Git, Gitlab, GitHub, Claude Code, GCP, AWS, Terraform, Grafana, RabbitMQ, DataDog, 
+          Golang, PostgreSQL, Docker, Git, Gitlab, GitHub, Claude Code, Conductor, GCP, AWS, Terraform, Grafana, RabbitMQ, DataDog, 
           JavaScript(ES6) (React, Redux, Bable, Webpack, Node, Express), Java, C#, Cordova/Ionic, Jenkins, Bitbucket, Bitrise,
            Auth0, JSON, XML, CSS, REST.
           </Description>

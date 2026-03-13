@@ -101,7 +101,7 @@ const Experiene = () => {
           offering APIs to launch and scale financial products with built-in compliance monitoring, KYC, and fraud detection.
 
           </CompanyDesc>
-          <SubHeading>Credit Dispute Workflow Automation (May 2025 - Aug 2023) </SubHeading>
+          <SubHeading>Credit Dispute Workflow Automation (May 2025 - Aug 2025) </SubHeading>
           <ul>
                 <li>
                 Designed and implemented an automated credit dispute workflow using Golang, PostgreSQL, and GCP Pub/Sub, replacing a previously manual process.
@@ -126,7 +126,7 @@ const Experiene = () => {
             </ul>
              
 
-            <SubHeading>Customer Risk Rating (CRR) Enhancements (Feb 2025 - May 2023) </SubHeading>
+            <SubHeading>Customer Risk Rating (CRR) Enhancements (Feb 2025 - May 2025) </SubHeading>
             <ul>
                 <li>
                 Designed and developed APIs that enable banks to configure their own risk score calculation settings (previously managed by
