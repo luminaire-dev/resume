@@ -101,7 +101,7 @@ const Experiene = () => {
           offering APIs to launch and scale financial products with built-in compliance monitoring, KYC, and fraud detection.
 
           </CompanyDesc>
-          <SubHeading>Credit Card & Lending Integration (Dec 2025 - Feb 2025)</SubHeading>
+          <SubHeading>Credit Card & Lending Integration (Dec 2025 - Feb 2026)</SubHeading>
           <ul>
               <li>
               Implemented business customer onboarding flow into partner platform, including bidirectional data mapping with our systems.

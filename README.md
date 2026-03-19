@@ -24,7 +24,7 @@ Event-Driven Architecture(Pub/Sub), CI/CD, Test Driven Development, Agentic AI, 
 ### Sr. Software Engineer - Synctera | 2024 - Present
 Synctera is a Banking-as-a-Service (BaaS) platform that connects fintechs with banks, offering APIs to launch and scale financial products with built-in compliance monitoring, KYC, and fraud detection.
 
-##### Credit Card & Lending Integration (Dec 2025 - Feb 2025)
+##### Credit Card & Lending Integration (Dec 2025 - Feb 2026)
 
 * Implemented business customer onboarding flow into partner platform, including bidirectional data mapping with our systems.
 * Implemented credit application flow with underwriting outcome handling for business and personal customers.
