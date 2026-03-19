@@ -166,13 +166,13 @@ const whoami = () => {
             , <Link href="https://www.koho.ca/" target="_blank" rel="noopener noreferrer">KOHO</Link>
             , and <Link href="https://www.atb.com/personal/" target="_blank" rel="noopener noreferrer">ATB Financial</Link>
             ), 
-            I've developed deep expertise building and scaling reliable solutions in the financial space, adapting to technological advances including AI. Most recently, I’ve been working alongside LLMs, building AI infrastructure and context-engineering modules.
+            I've developed deep expertise building and scaling reliable solutions in the financial space, adapting to technological advances including AI. Most recently, I’ve been working alongside LLMs, building AI infrastructure and context-engineering frameworks.
           </Description>
           <br />
           <Description>
-           In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains. 
-            I worked on various core products including Customer Risk Rating (CRR), Line of Credit Issuance, Credit Dispute Processing, KYC/KYB, 
-            and Synctera's case management platform.
+            In my current role at Synctera, I design and develop backend systems using Golang across the Risk,
+            Compliance, and Lending domains. I have worked on various core products including Customer Risk Rating (CRR),
+            Credit Cards and Lending, Credit Dispute Processing, KYC/KYB, and Synctera's case management platform.
           </Description>
           <br />
           <Description>I have worked on both large and small teams and explored a wide 

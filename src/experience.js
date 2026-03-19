@@ -101,6 +101,38 @@ const Experiene = () => {
           offering APIs to launch and scale financial products with built-in compliance monitoring, KYC, and fraud detection.
 
           </CompanyDesc>
+          <SubHeading>Credit Card & Lending Integration (Dec 2025 - Feb 2025)</SubHeading>
+          <ul>
+              <li>
+              Implemented business customer onboarding flow into partner platform, including bidirectional data mapping with our systems.
+              </li>
+              <li>
+              Implemented credit application flow with underwriting outcome handling for business and personal customers.
+              </li>
+              <li>
+              Developer the automated flow to deliver adverse action notice to end customer on credit application denial, ensuring regulatory compliance.
+              </li>
+              <li>
+              Built tenant onboarding scripts to seamlessly spin-up each fintech partner's environment on the lending platform.
+              </li>
+              <li>
+              Helped build a new service acting as an abstraction layer interfacing with the lending platform vendor, ensuring accurate data mapping and conversion.
+              </li>
+          </ul>
+
+          <SubHeading>KYC/KYB workflow Improvements (Sept 2025 - Dec 2025)</SubHeading>
+          <ul>
+              <li>
+              Built configurable gating for KYC case creation, ensuring KYC/B Review cases are opened after step-up document verification, reducing unnecessary workload and improving efficiency for Syncetra and fintech operations teams
+              </li>
+              <li>
+              Migrated legacy Python case creation flows into a Go-based service, improving reliability with retry and eventing and dead-letter queue support.
+              </li>
+              <li>
+              Implemented smart case assignment logic, introducing default ownership for cases and associated entities, eliminating manual intervention, reducing friction, and ensuring accurate assignment of responsible parties.
+              </li>
+          </ul>
+
           <SubHeading>Credit Dispute Workflow Automation (May 2025 - Aug 2025) </SubHeading>
           <ul>
                 <li>
@@ -114,11 +146,10 @@ const Experiene = () => {
                   Built logic to parse and process credit dispute data from batch files, storing credit dispute resources within our system.
                 </li>
                 <li>
-                  Automated event-driven case creation within the Synctera platform for each credit dispute resources, 
-                  improving resolution speed, traceability, and collaboration between Synctera and credit partners.
+                  Automated event-driven case creation within the Synctera platform for each credit dispute resources created.
                 </li>
                 <li>
-                  Wrotes e2e and integration tests, and created alerting reports in Metabase to monitor system health post-launch.
+                  Wrote e2e and integration tests, and created alerting reports in Metabase to monitor system health post-launch.
                 </li>
                 <li>
                   Worked closely with frontend developers to ensure the backend effectively serves frontend needs and vision.
@@ -126,7 +157,7 @@ const Experiene = () => {
             </ul>
              
 
-            <SubHeading>Customer Risk Rating (CRR) Enhancements (Feb 2025 - May 2025) </SubHeading>
+            <SubHeading>Customer Risk Rating (CRR) (Feb 2025 - May 2025) </SubHeading>
             <ul>
                 <li>
                 Designed and developed APIs that enable banks to configure their own risk score calculation settings (previously managed by
@@ -283,7 +314,7 @@ const Experiene = () => {
                 <li>Built unit tests in Jest and React Testing Library.</li>
                 <li>Constructed mobile end-to-end tests using Selenium and Experitest.</li>
                 <li>Configured CI/CD pipelines in GitLab and BitRise.</li>
-                <li>Provided on-call support and particapted in outage resolution and deployments.</li>
+                <li>Provided on-call support and participated in outage resolution and deployments.</li>
                 <li>Worked closely with other developers, frequently pairing, mentoring, and performing code reviews.</li>
             </ul>
 
@@ -295,7 +326,7 @@ const Experiene = () => {
               <li>Developed RESTful APIs using Express and microservices architecture.</li>
               <li>Built unit tests in Jest and React Testing Library.</li>
               <li>Constructed mobile end-to-end tests using Selenium.</li>
-              <li>Provided on-call support and particapted in outage resolution and deployments.</li>
+              <li>Provided on-call support and participated in outage resolution and deployments.</li>
             </ul>
 
             <SubHeading>Retail Banking Mobile (2016 - 2017) </SubHeading>
@@ -304,7 +335,7 @@ const Experiene = () => {
               <li>Implemented account summary and bill payment UIs using HTML5, CSS, Bootstrap and SAP Mobile Platform.</li>
               <li>Built backend endpoints using Soap and XML.</li>
               <li>Used Jenkins to automate builds and deployments.</li>
-              <li>Provided on-call support and particapted in outage resolution and deployments.</li>
+              <li>Provided on-call support and participated in outage resolution and deployments.</li>
             </ul>
 
             <SubHeading>ATB Flexible Pension Plan (2015 - 2016)</SubHeading>

@@ -7,9 +7,9 @@ Markdown version:
 
 Hi there, I'm Leila. 👋
 
-I’m a **builder** driven by the challenge of solving **meaningful problems** through **code and technology**. With over a decade of experience at three fintech and banking companies (Synctera, KOHO, and ATB Financial), I've developed deep expertise building and scaling reliable solutions in the financial space, adapting to technological advances including AI. Most recently, I’ve been working alongside LLMs, building AI infrastructure and context-engineering modules.
+I’m a **builder** driven by the challenge of solving **meaningful problems** through **code and technology**. With over a decade of experience at three fintech and banking companies (Synctera, KOHO, and ATB Financial), I've developed deep expertise building and scaling reliable solutions in the financial space, adapting to technological advances including AI. Most recently, I’ve been working alongside LLMs, building AI infrastructure and context-engineering frameworks.
 
-In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains. I worked on various core products including Customer Risk Rating (CRR), Line of Credit Issuance, Credit Dispute Processing, KYC/KYB, and Synctera's case management platform.
+In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains. I have worked on various core products including Customer Risk Rating (CRR), Credit Cards and Lending, Credit Dispute Processing, KYC/KYB, and Synctera's case management platform.
 
 I have worked on both large and small teams and explored a wide range of tools and development styles. My approach prioritizes thoughtful architecture and design, pragmatic optimization and reusability, and iterative development.
 
@@ -21,19 +21,33 @@ Event-Driven Architecture(Pub/Sub), CI/CD, Test Driven Development, Agentic AI, 
 
 ## Experience 👔
 
-### Sr. Software Engineer - Synctera | 2024 - present
+### Sr. Software Engineer - Synctera | 2024 - Present
 Synctera is a Banking-as-a-Service (BaaS) platform that connects fintechs with banks, offering APIs to launch and scale financial products with built-in compliance monitoring, KYC, and fraud detection.
 
-#####  Credit Dispute Workflow Automation (May 2025 - Aug 2025)
+##### Credit Card & Lending Integration (Dec 2025 - Feb 2025)
+
+* Implemented business customer onboarding flow into partner platform, including bidirectional data mapping with our systems.
+* Implemented credit application flow with underwriting outcome handling for business and personal customers.
+* Developer the automated flow to deliver adverse action notice to end customer on credit application denial, ensuring regulatory compliance.
+* Built tenant onboarding scripts to seamlessly spin-up each fintech partner's environment on the lending platform.
+* Helped build a new service acting as an abstraction layer interfacing with the lending platform vendor, ensuring accurate data mapping and conversion.
+
+#####  KYC/KYB workflow Improvements (Sept 2025 - Dec 2025)
+
+* Built configurable gating for KYC case creation, ensuring KYC/B Review cases are opened after step-up document verification, reducing unnecessary workload and improving efficiency for Syncetra and fintech operations teams
+* Migrated legacy Python case creation flows into a Go-based service, improving reliability with retry and eventing and dead-letter queue support.
+* Implemented smart case assignment logic, introducing default ownership for cases and associated entities, eliminating manual intervention, reducing friction, and ensuring accurate assignment of responsible parties.
+
+#####  Credit Dispute Workflow Automation (May 2025 - Sept 2025)
 
 * Designed and implemented an automated credit dispute workflow using Golang, PostgreSQL, and GCP Pub/Sub, replacing a previously manual process.
 * Built functionality to ingest credit dispute batch files from a B2B credit partner, over SFTP, using a Google Cloud Storage (GCS) event listener.
 * Built logic to parse and process credit dispute data from batch files, storing credit dispute resources within our system.
-* Automated event-driven case creation within the Synctera platform for each credit dispute resources.
-* Wrotes e2e and integration tests, and created alerting reports in Metabase to monitor system health post-launch and prevent regressions.
+* Automated event-driven case creation within the Synctera platform for each credit dispute resources created.
+* Wrote e2e and integration tests, and created alerting reports in Metabase to monitor system health post-launch and prevent regressions.
 * Worked closely with frontend developers to ensure the backend effectively served the frontend goals.
 
-#####  Customer Risk Rating (CRR) Enhancements (Feb 2025 - May 2025) 
+#####  Customer Risk Rating (CRR) (Feb 2025 - May 2025) 
 
 * Developed CRUD-style, Restful, API that enable banks to configure their own risk score calculation settings and fine-tune parameter weights and thresholds to suit their specific risk program and strategy.
 * Refactored legacy CRR code and introduced parallel processing of risk score calculations, using Go worker pools and goroutines, improving efficiency and performance.
@@ -86,7 +100,7 @@ ATB Financial is a bank that provides financial services to over 800,000 Alberta
 * Built unit tests in Jest and React Testing Library.
 * Constructed mobile end-to-end tests using Selenium and Experitest.
 * Configured CI/CD pipelines in GitLab and BitRise.
-* Provided on-call support and particapted in outage resolution and deployments.
+* Provided on-call support and participated in outage resolution and deployments.
 * Worked closely with other developers, frequently pairing, mentoring, and performing code reviews.
 ##### Online Banking (2017 - 2018) 
 * Developed a new online banking platform using React, Redux, Babel, Webpack, Express, and Node.js.
@@ -95,14 +109,14 @@ ATB Financial is a bank that provides financial services to over 800,000 Alberta
 * Developed RESTful APIs using Express and microservices architecture.
 * Built unit tests in Jest and React Testing Library.
 * Constructed mobile end-to-end tests using Selenium.
-* Provided on-call support and particapted in outage resolution and deployments.
+* Provided on-call support and participated in outage resolution and deployments.
 
 ##### Retail Banking Mobile (2016 - 2017) 
 * Developed a new ATB mobile banking app using HTML5 and Cordova.
 * Implemented account summary and bill payment UIs using HTML5, CSS, Bootstrap and SAP Mobile Platform.
 * Built backend endpoints using Soap and XML.
 * Used Jenkins to automate builds and deployments.
-* Provided on-call support and particapted in outage resolution and deployments.
+* Provided on-call support and participated in outage resolution and deployments.
 
 ##### ATB Flexible Pension Plan (2015 - 2016)
 * Developed an internal .NET app to allow ATB team members to update or make changes to their pension.
@@ -120,7 +134,7 @@ Capstone: Modernized Alberta Health Services’ (AHS) legacy back-end to n-tier 
 ## Community 🌳
 Building community, beyond my regular day-to-day responsibilities, has always been important and meaningful to me. Here are some of the ways I've been involved and acknowledged for my participation in different communities:
 
-#### Women Who Go Toronto, 2022 - Present
+#### Women Who Go Toronto, 2022 - 2024
 I've been involved in this community of women and non-binary Go developers; organizing book clubs, coding challenges, and talks on various Go topics.
 
 #### deCODE Hackathon Fall, 2021
