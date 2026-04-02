@@ -9,9 +9,9 @@ Hi there, I'm Leila. 👋
 
 I’m a **builder** driven by the challenge of solving **meaningful problems** through **code and technology**. With over a decade of experience at three fintech and banking companies (Synctera, KOHO, and ATB Financial), I've developed deep expertise building and scaling reliable solutions in the financial space, adapting to technological advances including AI. Most recently, I’ve been working alongside LLMs, building AI infrastructure and context-engineering frameworks.
 
-In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains. I have worked on various core products including Customer Risk Rating (CRR), Credit Cards and Lending, Credit Dispute Processing, KYC/KYB, and Synctera's case management platform.
+In my current role at Synctera, I design and develop backend systems using Golang across the Risk, Compliance, and Lending domains. I have worked on various core products including Customer Risk Rating (CRR), Credit Cards, Credit Dispute Processing, KYC/KYB, and Synctera's case management platform.
 
-I have worked on both large and small teams and explored a wide range of tools and development styles. My approach prioritizes thoughtful architecture and design, pragmatic optimization and reusability, and iterative development.
+I have worked on both large and small teams and explored a wide range of tools and development styles. My approach prioritizes thoughtful architecture, pragmatic reusability, and iterative development.
 
 ## Tech Stack 🥞
 Golang, PostgreSQL, Docker, Git, Gitlab, GitHub, Claude Code, Conductor, GCP, AWS, Terraform, Grafana, RabbitMQ, DataDog, JavaScript(ES6) (React, Redux, Bable, Webpack, Node, Express), Java, C#, Cordova/Ionic, Jenkins, Bitbucket, Bitrise, Auth0, JSON, XML, CSS, REST.

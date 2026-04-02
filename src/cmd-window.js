@@ -172,12 +172,12 @@ const whoami = () => {
           <Description>
             In my current role at Synctera, I design and develop backend systems using Golang across the Risk,
             Compliance, and Lending domains. I have worked on various core products including Customer Risk Rating (CRR),
-            Credit Cards and Lending, Credit Dispute Processing, KYC/KYB, and Synctera's case management platform.
+            Credit Cards, Credit Dispute Processing, KYC/KYB, and Synctera's case management platform.
           </Description>
           <br />
           <Description>I have worked on both large and small teams and explored a wide 
             range of tools and development styles. My approach prioritizes thoughtful 
-            architecture and design, pragmatic optimization and reusability, and iterative development.
+            architecture, pragmatic reusability, and iterative development.
             </Description>
 
           <Heading>Tech Stack</Heading>
